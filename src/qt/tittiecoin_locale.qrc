@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ca">locale/tittiecoin_ca.qm</file>
+        <file alias="da">locale/tittiecoin_da.qm</file>
+        <file alias="de">locale/tittiecoin_de.qm</file>
+        <file alias="en">locale/tittiecoin_en.qm</file>
+        <file alias="en_US">locale/tittiecoin_en_US.qm</file>
+        <file alias="es">locale/tittiecoin_es.qm</file>
+        <file alias="fr_FR">locale/tittiecoin_fr_FR.qm</file>
+        <file alias="it">locale/tittiecoin_it.qm</file>
+        <file alias="ja">locale/tittiecoin_ja.qm</file>
+        <file alias="pt">locale/tittiecoin_pt.qm</file>
+        <file alias="ro_RO">locale/tittiecoin_ro_RO.qm</file>
+        <file alias="ru">locale/tittiecoin_ru.qm</file>
+        <file alias="zh_TW">locale/tittiecoin_zh_TW.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=TittieCoin
+Comment=TittieCoin P2P Cryptocurrency
+Comment[fr]=TittieCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=TittieCoin, eşten eşe kriptografik sanal para birimi
+Exec=tittiecoin-qt %u
+Terminal=false
+Type=Application
+Icon=tittiecoin128
+MimeType=x-scheme-handler/tittiecoin;
+Categories=Office;Finance;

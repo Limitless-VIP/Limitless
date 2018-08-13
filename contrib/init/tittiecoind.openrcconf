@@ -1,0 +1,26 @@
+# /etc/conf.d/tittiecoind: config file for /etc/init.d/tittiecoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/tittiecoin/tittiecoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/tittiecoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/tittiecoind.pid"
+
+# Where to write tittiecoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/tittiecoind"
+
+# User and group to own tittiecoind process
+#BITCOIND_USER="tittiecoin"
+#BITCOIND_GROUP="tittiecoin"
+
+# Path to tittiecoind executable
+#BITCOIND_BIN="/usr/bin/tittiecoind"
+
+# Nice value to run tittiecoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
