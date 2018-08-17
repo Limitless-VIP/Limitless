@@ -41,8 +41,8 @@ regularly to indicate new official, stable release versions of Bitcoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-The developer IRC should be used to discuss complicated or controversial changes before
-working on a patch set. Developer IRC can be found http://webchat.quakenet.org at #Tittiecoin
+The developer channel at Discord should be used to discuss complicated or controversial changes before
+working on a patch set. Developer Discord can be found https://discord.gg/57bcjwB at #Tittiecoin
 
 
 Translations
