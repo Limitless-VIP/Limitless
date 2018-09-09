@@ -28,8 +28,8 @@ Drag TittieCoin-Qt to your applications folder, and then run TittieCoin-Qt.
 
 * See the documentation at the [TittieCoin Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [TittieCoin Forum](http://forum.tittiecoin.com/).
-* Join one of our Slack groups [TittieCoin Slack Groups](https://tittiecoin.com/slack-logins/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=437695.0) or on the [TittieCoin Discord](https://discordapp.com/invite/57bcjwB).
+* Or join us on Telegram [TittieCoin Telegram](https://t.me/TittieCoin_Official).
 
 Building
 ---------------------
@@ -55,8 +55,8 @@ The TittieCoin repo's [root README](https://github.com/TittieCoin-Project/Tittie
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [TittieCoin](http://forum.tittiecoin.com/) forum.
-* Join the [TittieCoin-Dev](https://tittiecoin-dev.slack.com/) Slack group ([Sign-Up](https://tittiecoin-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=437695.0) or the [TittieCoin Discord](https://discordapp.com/invite/57bcjwB) forum.
+* Join the Telegram channel [TittieCoin Telegram](https://t.me/TittieCoin_Official).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
