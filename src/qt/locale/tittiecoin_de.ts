@@ -95,7 +95,7 @@
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Beim Speichern der Adressliste nach %1 ist ein Fehler aufgetreten. Bitte noch einmal versuchen.</translation>
+        <translation>Beim Speichern der Adressliste nach %1 ist ein Fehler aufgetreten. Bitte versuchen Sie es noch einmal.</translation>
     </message>
 </context>
 <context>
@@ -149,7 +149,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Dieser Vorgang benötigt ihre Passphrase, um die Wallet zu entsperren.</translation>
+        <translation>Dieser Vorgang benötigt ihre Passphrase, um das Wallet zu entsperren.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -157,7 +157,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Dieser Vorgang benötigt ihre Passphrase, um die Wallet zu entschlüsseln.</translation>
+        <translation>Dieser Vorgang benötigt ihre Passphrase, um das Wallet zu entschlüsseln.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
