@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Rechts-Klick um Adresse oder Bezeichnung zu bearbeiten</translation>
+        <translation>Rechts-Klick um die Adresse oder Bezeichnung zu bearbeiten</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your TittieCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre TittieCoin-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie TittieCoin überweisen.</translation>
+        <translation>Dies sind ihre TittieCoin-Adressen mit denen Sie Überweisungen tätigen können. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie TittieCoin überweisen.</translation>
     </message>
     <message>
         <source>These are your TittieCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre TittieCoin-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <translation>Dies sind ihre TittieCoin-Adressen mit denen Sie Zahlungen empfangen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -149,7 +149,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Dieser Vorgang benötigt ihre Passphrase, um die Wallet zu entsperren.</translation>
+        <translation>Dieser Vorgang benötigt ihre Passphrase, um das Wallet zu entsperren.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -157,7 +157,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Dieser Vorgang benötigt ihre Passphrase, um die Wallet zu entschlüsseln.</translation>
+        <translation>Dieser Vorgang benötigt ihre Passphrase, um das Wallet zu entschlüsseln.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TTCs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer TTCs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass eine Verschlüsselung nicht vollständig vor Diebstahl ihrer TTCs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -185,7 +185,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TTC&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre TTCs verlieren&lt;/b&gt;!</translation>
+        <translation>Warnung: Wenn Sie das Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre TTCs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -335,7 +335,7 @@
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Verschlüsselt die zu ihrer Wallet gehörenden privaten Schlüssel</translation>
+        <translation>Verschlüsselt die zu ihrem Wallet gehörenden privaten Schlüssel</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
@@ -511,7 +511,7 @@
     </message>
     <message>
         <source>Sign messages with your TittieCoin addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer TittieCoin-Adresse und beweist, dass sie Ihnen gehört</translation>
+        <translation>Signiert eine Nachricht mit Ihrer TittieCoin-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified TittieCoin addresses</source>
