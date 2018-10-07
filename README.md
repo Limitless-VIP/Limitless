@@ -58,6 +58,6 @@ See the [translation process](doc/translation_process.md) for details on how thi
 pull from Transifex would automatically overwrite them again.
 
 
-Credit: Bitcoin Developers, Litecoin Developers and Dash Developers 
+Credit: Bitcoin Developers, Litecoin Developers and Dash Developers.
 
 
