@@ -117,19 +117,19 @@
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Passphrasendialog</translation>
+        <translation>Passwortdialog</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Passphrase eingeben</translation>
+        <translation>Passwort eingeben</translation>
     </message>
     <message>
         <source>New passphrase</source>
-        <translation>Neue Passphrase</translation>
+        <translation>Neues Passwort</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Neue Passphrase wiederholen</translation>
+        <translation>Neues Passwort wiederholen</translation>
     </message>
     <message>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
@@ -141,7 +141,7 @@
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Geben Sie die neue Passphrase für die Wallet ein.&lt;br&gt;Bitte benutzen Sie eine Passphrase bestehend aus &lt;b&gt;10 oder mehr zufälligen Zeichen&lt;/b&gt; oder &lt;b&gt;8 oder mehr Wörtern&lt;/b&gt;.</translation>
+        <translation>Geben Sie das neue Passwort für das Wallet ein.&lt;br&gt;Bitte benutzen Sie ein Passwort bestehend aus &lt;b&gt;10 oder mehr zufälligen Zeichen&lt;/b&gt; oder &lt;b&gt;8 oder mehr Wörtern&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -149,7 +149,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Dieser Vorgang benötigt ihre Passphrase, um das Wallet zu entsperren.</translation>
+        <translation>Dieser Vorgang benötigt Ihr Passwort, um das Wallet zu entsperren.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -157,7 +157,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Dieser Vorgang benötigt ihre Passphrase, um das Wallet zu entschlüsseln.</translation>
+        <translation>Dieser Vorgang benötigt Ihr Passwort, um das Wallet zu entschlüsseln.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -165,19 +165,19 @@
     </message>
     <message>
         <source>Change passphrase</source>
-        <translation>Passphrase ändern</translation>
+        <translation>Passwort ändern</translation>
     </message>
     <message>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Geben Sie die alte und neue Wallet-Passphrase ein.</translation>
+        <translation>Geben Sie Ihr altes und neues Passwort ein.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TTCs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass eine Verschlüsselung nicht vollständig vor Diebstahl ihrer TTCs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Tittiecoins from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass eine Verschlüsselung nicht vollständig vor Diebstahl ihrer Tittiecoins durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -185,7 +185,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TTC&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie das Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre TTCs verlieren&lt;/b&gt;!</translation>
+        <translation>Warnung: Wenn Sie das Wallet verschlüsseln und Ihr Passwort verlieren, &lt;b&gt;haben Sie keinen Zugriff mehr zu Ihren Tittiecoins!&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -205,7 +205,7 @@
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
-        <translation>Die eingegebenen Passphrasen stimmen nicht überein.</translation>
+        <translation>Die eingegebenen Passwörter stimmen nicht überein.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
@@ -213,7 +213,7 @@
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>Die eingegebene Passphrase zur Wallet-Entschlüsselung war nicht korrekt.</translation>
+        <translation>Das eingegebene Passwort zur Wallet-Entschlüsselung war nicht korrekt.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>Die Wallet-Passphrase wurde erfolgreich geändert.</translation>
+        <translation>Das Passwort wurde erfolgreich geändert.</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -260,7 +260,7 @@
     </message>
     <message>
         <source>Passphrase: </source>
-        <translation>Passphrase: </translation>
+        <translation>Passwort: </translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -347,11 +347,11 @@
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
-        <translation>Passphrase &amp;ändern...</translation>
+        <translation>Passwort &amp;ändern...</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Ändert die Passphrase, die für die Wallet-Verschlüsselung benutzt wird</translation>
+        <translation>Ändert das Passwort, welches für die Wallet-Verschlüsselung benutzt wird</translation>
     </message>
     <message>
         <source>&amp;Unlock Wallet...</source>
@@ -1456,7 +1456,7 @@ Adresse: %4</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>TTCs überweisen</translation>
+        <translation>Tittiecoins überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1468,7 +1468,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
-        <translation>Unzureichender Kontostand!</translation>
+        <translation>Unzureichendes Guthaben!</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -1512,7 +1512,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Wenn dies aktivert, und die Wechselgeld-Adresse leer oder ungültig ist, wird das Wechselgeld einer neu erzeugten Adresse gutgeschrieben.</translation>
+        <translation>Wenn dies aktivert ist, und die Wechselgeld-Adresse leer oder ungültig ist, wird das Wechselgeld einer neu erzeugten Adresse gutgeschrieben.</translation>
     </message>
     <message>
         <source>Custom change address</source>
@@ -1714,7 +1714,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Fahren Sie den Computer nicht herunter, bevor dieses Fenster verschwindet.</translation>
+        <translation>Fahren Sie den Computer nicht herunter, solange dieses Fenster sichtbar ist.</translation>
     </message>
 </context>
 <context>
@@ -1882,7 +1882,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>watch-only</source>
-        <translation>nur beobachtet</translation>
+        <translation>nur sichtbar</translation>
     </message>
     <message>
         <source>label</source>
@@ -1938,7 +1938,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte TTCs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine TTCs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte Tittiecoins müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine Tittiecoins gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2080,7 +2080,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>watch-only</source>
-        <translation>nur beobachtet</translation>
+        <translation>nur sichtbar</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -2159,11 +2159,11 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Obfuscation Make Collateral Inputs</source>
-        <translation>Verschleierung Erzeugung des Sicherheitspfand</translation>
+        <translation>Verschleierung: Erzeugung des Sicherheitspfandes</translation>
     </message>
     <message>
         <source>Obfuscation Create Denominations</source>
-        <translation>Verschleierung Erzeugung der Stückelung</translation>
+        <translation>Verschleierung: Erzeugung der Stückelung</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2239,7 +2239,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Watch-only</source>
-        <translation>Nur beobachtet</translation>
+        <translation>Nur sichtbar</translation>
     </message>
     <message>
         <source>Date</source>
@@ -2290,21 +2290,21 @@ Adresse: %4</translation>
     <name>UnitDisplayStatusBarControl</name>
     <message>
         <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Angezeigte Einheit. Anklicken Sie, um eine andere Einheit zu wählen.</translation>
+        <translation>Angezeigte Einheit. Anklicken, um eine andere Einheit zu wählen.</translation>
     </message>
 </context>
 <context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
-        <translation>Es wurde keine Wallet geladen.</translation>
+        <translation>Es wurde kein Wallet geladen.</translation>
     </message>
 </context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>TTCs überweisen</translation>
+        <translation>Tittiecoins überweisen</translation>
     </message>
     <message>
         <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 TTC.</source>
@@ -2402,7 +2402,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>This is not a Masternode.</source>
-        <translation>Dies ist keine Masternode.</translation>
+        <translation>Dies ist kein Masternode.</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
