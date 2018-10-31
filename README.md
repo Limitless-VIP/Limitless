@@ -44,20 +44,6 @@ The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 The developer channel at Discord should be used to discuss complicated or controversial changes before
 working on a patch set. Developer Discord can be found https://discord.gg/57bcjwB at #Tittiecoin
 
-
-Translations
-------------
-
-Changes to translations as well as new translations can be submitted to
-[TIttieCoin Core's Transifex page](https://www.transifex.com/projects/p/tittiecoin/).
-
-Translations are periodically pulled from Transifex and merged into the git repository. 
-See the [translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
-
-
 Credit: Bitcoin Developers, Litecoin Developers and Dash Developers.
 
 
