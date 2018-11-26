@@ -15,11 +15,11 @@ technology to operate with no central authority: managing transactions and issui
 money are carried out collectively by the network. TittieCoin Core is the name of
 open source software which enables the use of TTC the currency. 
 
-TittieCoin v2.0 development was inspired by the the PIVX model, a fork of PIVX with a few changes
+TittieCoin v2.0 development was inspired by the PIVX model, a fork of PIVX with a few changes
 differing primarily by having a decreased block generation time, increased maximum number of coins, 
 different hashing algorithm phi1612, and a slightly modified GUI.
 TittieCoin also proudly boasts Dark Gravity Wave 3 an open source difficulty-adjusting algorithm
-for Bitcoin-based cryptocurrencies that was first used in Darkcoin/Dash and has sice
+for Bitcoin-based cryptocurrencies that was first used in Darkcoin/Dash and has since
 been adopted by other digital currencies.
 
 For more information, as well as an immediately useable, binary version of
