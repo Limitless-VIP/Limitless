@@ -437,13 +437,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\TittieCoin
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\TittieCoin
-// Mac: ~/Library/Application Support/TittieCoin
-// Unix: ~/.tittiecoin
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\TittieCoinv2
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\TittieCoinv2
+// Mac: ~/Library/Application Support/TittieCoinv2
+// Unix: ~/.TittieCoinv2
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "TittieCoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "TittieCoinv2";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -455,10 +455,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "TittieCoin";
+    return pathRet / "TittieCoinv2";
 #else
     // Unix
-    return pathRet / ".tittiecoin";
+    return pathRet / ".TittieCoinv2";
 #endif
 #endif
 }

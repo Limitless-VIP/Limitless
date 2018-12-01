@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(TTC);
-    unitlist.append(mTTC);
-    unitlist.append(uTTC);
+    unitlist.append(TIT);
+    unitlist.append(mTIT);
+    unitlist.append(uTIT);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case TTC:
-    case mTTC:
-    case uTTC:
+    case TIT:
+    case mTIT:
+    case uTIT:
         return true;
     default:
         return false;
@@ -41,11 +41,11 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case TTC:
+    case TIT:
         return QString("tittiecoin");
-    case mTTC:
+    case mTIT:
         return QString("mtittiecoin");
-    case uTTC:
+    case uTIT:
         return QString::fromUtf8("utittiecoin");
     default:
         return QString("???");
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TTC:
-            return QString("TTC");
-        case mTTC:
-            return QString("mTTC");
-        case uTTC:
-            return QString::fromUtf8("μTTC");
+        case TIT:
+            return QString("TIT");
+        case mTIT:
+            return QString("mTIT");
+        case uTIT:
+            return QString::fromUtf8("μTIT");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TTC:
-            return QString("tTTC");
-        case mTTC:
-            return QString("mtTTC");
-        case uTTC:
-            return QString::fromUtf8("μtTTC");
+        case TIT:
+            return QString("tTIT");
+        case mTIT:
+            return QString("mtTIT");
+        case uTIT:
+            return QString::fromUtf8("μtTIT");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TTC:
-            return QString("TTC");
-        case mTTC:
-            return QString("Milli-TTC (1 / 1" THIN_SP_UTF8 "000)");
-        case uTTC:
-            return QString("Micro-TTC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case TIT:
+            return QString("TIT");
+        case mTIT:
+            return QString("Milli-TIT (1 / 1" THIN_SP_UTF8 "000)");
+        case uTIT:
+            return QString("Micro-TIT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TTC:
-            return QString("TestTTCs");
-        case mTTC:
-            return QString("Milli-TestTTC (1 / 1" THIN_SP_UTF8 "000)");
-        case uTTC:
-            return QString("Micro-TestTTC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case TIT:
+            return QString("TestTITs");
+        case mTIT:
+            return QString("Milli-TestTIT (1 / 1" THIN_SP_UTF8 "000)");
+        case uTIT:
+            return QString("Micro-TestTIT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case TTC:
+    case TIT:
         return 100000000;
-    case mTTC:
+    case mTIT:
         return 100000;
-    case uTTC:
+    case uTIT:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case TTC:
+    case TIT:
         return 8;
-    case mTTC:
+    case mTIT:
         return 5;
-    case uTTC:
+    case uTIT:
         return 2;
     default:
         return 0;

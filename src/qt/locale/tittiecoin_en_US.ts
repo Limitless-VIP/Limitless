@@ -176,16 +176,16 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TTCs from being stolen by malware infecting your computer.</source>
-        <translation>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TTCs from being stolen by malware infecting your computer.</translation>
+        <source>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TITs from being stolen by malware infecting your computer.</source>
+        <translation>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TITs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TTC&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TTC&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TIT&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TIT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1560,32 +1560,32 @@ Please check the address and try again.</translation>
         <translation>Please select a privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TTC</source>
-        <translation>Use 2 separate masternodes to mix funds up to 10000 TTC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 TIT</source>
+        <translation>Use 2 separate masternodes to mix funds up to 10000 TIT</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TTC</source>
-        <translation>Use 8 separate masternodes to mix funds up to 10000 TTC</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 TIT</source>
+        <translation>Use 8 separate masternodes to mix funds up to 10000 TIT</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 separate masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TTC to anonymize 10000 TTC</source>
-        <translation>This option is the quickest and will cost about ~0.025 TTC to anonymize 10000 TTC</translation>
+        <source>This option is the quickest and will cost about ~0.025 TIT to anonymize 10000 TIT</source>
+        <translation>This option is the quickest and will cost about ~0.025 TIT to anonymize 10000 TIT</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TTC to anonymize 10000 TTC</source>
-        <translation>This option is moderately fast and will cost about 0.05 TTC to anonymize 10000 TTC</translation>
+        <source>This option is moderately fast and will cost about 0.05 TIT to anonymize 10000 TIT</source>
+        <translation>This option is moderately fast and will cost about 0.05 TIT to anonymize 10000 TIT</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
-        <source>0.1 TTC per 10000 TTC you anonymize.</source>
-        <translation>0.1 TTC per 10000 TTC you anonymize.</translation>
+        <source>0.1 TIT per 10000 TIT you anonymize.</source>
+        <translation>0.1 TIT per 10000 TIT you anonymize.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1943,8 +1943,8 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</tr
         <translation>Obfuscation Balance:</translation>
     </message>
     <message>
-        <source>0 TTC / 0 Rounds</source>
-        <translation>0 TTC / 0 Rounds</translation>
+        <source>0 TIT / 0 Rounds</source>
+        <translation>0 TIT / 0 Rounds</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2812,8 +2812,8 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</tr
         <translation>UTXO Size:</translation>
     </message>
     <message>
-        <source>0 TTC</source>
-        <translation>0 TTC</translation>
+        <source>0 TIT</source>
+        <translation>0 TIT</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2860,12 +2860,12 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</tr
         <translation>Confirmation time:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTTCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTTCs in fee,&lt;br /&gt;while "at least" pays 1000 uTTCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uTTCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTTCs in fee,&lt;br /&gt;while "at least" pays 1000 uTTCs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uTITs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTITs in fee,&lt;br /&gt;while "at least" pays 1000 uTITs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uTITs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTITs in fee,&lt;br /&gt;while "at least" pays 1000 uTITs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTTCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTTCs in fee,&lt;br /&gt;while "total at least" pays 1000 uTTCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uTTCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTTCs in fee,&lt;br /&gt;while "total at least" pays 1000 uTTCs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uTITs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTITs in fee,&lt;br /&gt;while "total at least" pays 1000 uTITs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uTITs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTITs in fee,&lt;br /&gt;while "total at least" pays 1000 uTITs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for TittieCoin transactions than the network can process.</source>
@@ -3860,8 +3860,8 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</tr
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 TTC.</source>
-        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 TTC.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 TIT.</source>
+        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 TIT.</translation>
     </message>
 </context>
 <context>
@@ -3990,12 +3990,12 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</tr
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in TTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in TTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in TIT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in TIT/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TTC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in TTC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in TIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in TIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4126,12 +4126,12 @@ for example: alertnotify=echo %%s | mail -s "TittieCoin Alert" admin@foo.com
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TTC.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TTC.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TIT.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TIT.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 TTC.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 TTC.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 TIT.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 10000 TIT.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4424,8 +4424,8 @@ for example: alertnotify=echo %%s | mail -s "TittieCoin Alert" admin@foo.com
         <translation>Failed to read block</translation>
     </message>
     <message>
-        <source>Fee (in TTC/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in TTC/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in TIT/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in TIT/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4548,8 +4548,8 @@ for example: alertnotify=echo %%s | mail -s "TittieCoin Alert" admin@foo.com
         <translation>Invalid script detected.</translation>
     </message>
     <message>
-        <source>Keep N TTC anonymized (default: %u)</source>
-        <translation>Keep N TTC anonymized (default: %u)</translation>
+        <source>Keep N TIT anonymized (default: %u)</source>
+        <translation>Keep N TIT anonymized (default: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>

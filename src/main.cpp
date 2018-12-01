@@ -1624,12 +1624,20 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 34.5 * COIN;
 	} else if (nHeight <= 150000 && nHeight > 75000) {
         nSubsidy = 17.625 * COIN;
-	} else if (nHeight <= 250000 && nHeight > 150000) {
+	} else if (nHeight <= 153500 && nHeight > 150000) {
         nSubsidy = 8.65 * COIN;
-	} else if (nHeight <= 500000 && nHeight > 250000) {
-        nSubsidy = 4.3125 * COIN;
-	} else if (nHeight > 500000) {
-		nSubsidy = 2.1562 * COIN;
+	} else if (nHeight <= 153501 && nHeight > 153500) {
+	nSubsidy = 350000000 * COIN;
+	} else if (nHeight <= 172788 && nHeight > 153001) {
+        nSubsidy = 69 * COIN;
+	} else if (nHeight <= 252788 && nHeight > 172788) {
+        nSubsidy = 34.5 * COIN;
+	} else if (nHeight <= 450000 && nHeight > 252788) {
+        nSubsidy = 17.25 * COIN;
+	} else if (nHeight <= 650000 && nHeight > 450000) {
+        nSubsidy = 8.625 * COIN;
+	} else if (nHeight > 700000) {
+		nSubsidy = 4.3125 * COIN;
     } else {
         nSubsidy = 0 * COIN;
     }
@@ -2151,8 +2159,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                         REJECT_INVALID, "bad-blk-sigops");
             }
 
-            nFees += view.GetValueIn(tx) - tx.GetValueOut();
-            nValueIn += view.GetValueIn(tx);
+				if (!tx.IsCoinStake())
+                nFees += view.GetValueIn(tx) - tx.GetValueOut();
+                nValueIn += view.GetValueIn(tx);
 
             std::vector<CScriptCheck> vChecks;
             if (!CheckInputs(tx, state, view, fScriptChecks, flags, false, nScriptCheckThreads ? &vChecks : NULL))
@@ -2172,8 +2181,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     }
 
     // ppcoin: track money supply and mint amount info
-    pindex->nMint = nValueOut - nValueIn + nFees;
-    pindex->nMoneySupply = (pindex->pprev ? pindex->pprev->nMoneySupply : 0) + nValueOut - nValueIn;
+    CAmount nMoneySupplyPrev = pindex->pprev ? pindex->pprev->nMoneySupply : 0;
+    pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
+    pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
     if (!pblocktree->WriteBlockIndex(CDiskBlockIndex(pindex)))
         return error("Connect() : WriteBlockIndex for pindex failed");
@@ -2182,12 +2192,17 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     nTimeConnect += nTime1 - nTimeStart;
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs - 1), nTimeConnect * 0.000001);
 
-    if (!IsInitialBlockDownload() && !IsBlockValueValid(block, GetBlockValue(pindex->pprev->nHeight))) {
-        return state.DoS(100,
-            error("ConnectBlock() : reward pays too much (actual=%d vs limit=%d)",
-                block.vtx[0].GetValueOut(), GetBlockValue(pindex->pprev->nHeight)),
-            REJECT_INVALID, "bad-cb-amount");
-    }
+    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight);
+    if (block.IsProofOfWork())
+        nExpectedMint += nFees;
+	
+	
+		if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
+			return state.DoS(100,
+				error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
+					FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)),
+				REJECT_INVALID, "bad-cb-amount");
+		}
 
     if (!control.Wait())
         return state.DoS(100, false);

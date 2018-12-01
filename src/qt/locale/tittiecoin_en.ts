@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TTCs from being stolen by malware infecting your computer.</source>
+        <source>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TITs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TTC&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TIT&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1975,12 +1975,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TTC</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 TIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TTC</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 TIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1990,12 +1990,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 TTC to anonymize 10000 TTC</source>
+        <source>This option is the quickest and will cost about ~0.025 TIT to anonymize 10000 TIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 TTC to anonymize 10000 TTC</source>
+        <source>This option is moderately fast and will cost about 0.05 TIT to anonymize 10000 TIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2005,7 +2005,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 TTC per 10000 TTC you anonymize.</source>
+        <source>0.1 TIT per 10000 TIT you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2456,7 +2456,7 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</so
     </message>
     <message>
         <location line="+27"/>
-        <source>0 TTC / 0 Rounds</source>
+        <source>0 TIT / 0 Rounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3597,7 +3597,7 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</so
     </message>
     <message>
         <location line="+7"/>
-        <source>0 TTC</source>
+        <source>0 TIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3657,12 +3657,12 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</so
     </message>
     <message>
         <location line="-165"/>
-        <source>If the custom fee is set to 1000 uTTCs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uTTCs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uTTCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uTITs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uTITs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uTITs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uTTCs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uTTCs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uTTCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uTITs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uTITs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uTITs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4957,7 +4957,7 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</so
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TTC.</source>
+        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TIT.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5118,12 +5118,12 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</so
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in TTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in TIT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in TTC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in TIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5273,12 +5273,12 @@ for example: alertnotify=echo %%s | mail -s &quot;TittieCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TTC.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TIT.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 TTC.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 TIT.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5645,7 +5645,7 @@ for example: alertnotify=echo %%s | mail -s &quot;TittieCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Fee (in TTC/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in TIT/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5800,7 +5800,7 @@ for example: alertnotify=echo %%s | mail -s &quot;TittieCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Keep N TTC anonymized (default: %u)</source>
+        <source>Keep N TIT anonymized (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

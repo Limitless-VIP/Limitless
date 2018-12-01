@@ -176,16 +176,16 @@
         <translation>Confirmar la encriptación de la wallet</translation>
     </message>
     <message>
-        <source>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TTCs from being stolen by malware infecting your computer.</source>
-        <translation>TittieCoin se cerrará ahora para finalizar el proceso de encriptación. Recordad que encriptar vuestra wallet no puede proteger completamente que tus TTCs sean robados mediante malware infectando tu ordenador.</translation>
+        <source>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TITs from being stolen by malware infecting your computer.</source>
+        <translation>TittieCoin se cerrará ahora para finalizar el proceso de encriptación. Recordad que encriptar vuestra wallet no puede proteger completamente que tus TITs sean robados mediante malware infectando tu ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estás seguro de que quieres encriptar tu wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TTC&lt;/b&gt;!</source>
-        <translation>Atención: Si encriptas tu wallet y pierdes tu contraseña, perderás &lt;b&gt; TODOS TUS TTC&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TIT&lt;/b&gt;!</source>
+        <translation>Atención: Si encriptas tu wallet y pierdes tu contraseña, perderás &lt;b&gt; TODOS TUS TIT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1560,32 +1560,32 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Por favor selecciones un nivel de privacidad.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TTC</source>
-        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 10000 TTC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 TIT</source>
+        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 10000 TIT</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TTC</source>
-        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 10000 TTC</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 TIT</source>
+        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 10000 TIT</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 nodos maestros diferentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TTC to anonymize 10000 TTC</source>
-        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 TTC para anonimizar 10000 TTC</translation>
+        <source>This option is the quickest and will cost about ~0.025 TIT to anonymize 10000 TIT</source>
+        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 TIT para anonimizar 10000 TIT</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TTC to anonymize 10000 TTC</source>
-        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 TTC para anonimizar 10000 TTC.</translation>
+        <source>This option is moderately fast and will cost about 0.05 TIT to anonymize 10000 TIT</source>
+        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 TIT para anonimizar 10000 TIT.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta es la opción más lenta pero más segura. Usar el máximo anonimato costará</translation>
     </message>
     <message>
-        <source>0.1 TTC per 10000 TTC you anonymize.</source>
-        <translation>0.1 TTC por 10000 TTC que anonimizas.</translation>
+        <source>0.1 TIT per 10000 TIT you anonymize.</source>
+        <translation>0.1 TIT por 10000 TIT que anonimizas.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1943,8 +1943,8 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</tr
         <translation>Balance de Ofuscación:</translation>
     </message>
     <message>
-        <source>0 TTC / 0 Rounds</source>
-        <translation>0 TTC / 0 Rondas</translation>
+        <source>0 TIT / 0 Rounds</source>
+        <translation>0 TIT / 0 Rondas</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2809,8 +2809,8 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</tr
         <translation>Tamaño de UTXO:</translation>
     </message>
     <message>
-        <source>0 TTC</source>
-        <translation>0 TTC</translation>
+        <source>0 TIT</source>
+        <translation>0 TIT</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2857,12 +2857,12 @@ https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</tr
         <translation>Tiempo de confirmación:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTTCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTTCs in fee,&lt;br /&gt;while "at least" pays 1000 uTTCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uTTCs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uTTCs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uTTCs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uTITs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTITs in fee,&lt;br /&gt;while "at least" pays 1000 uTITs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uTITs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uTITs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uTITs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTTCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTTCs in fee,&lt;br /&gt;while "total at least" pays 1000 uTTCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uTTCs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uTTCs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uTTCs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uTITs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTITs in fee,&lt;br /&gt;while "total at least" pays 1000 uTITs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uTITs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uTITs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uTITs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for TittieCoin transactions than the network can process.</source>

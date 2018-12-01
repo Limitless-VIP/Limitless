@@ -38,7 +38,7 @@ map<uint256, CObfuscationBroadcastTx> mapObfuscationBroadcastTxes;
 // Keep track of the active Masternode
 CActiveMasternode activeMasternode;
 
-/* *** BEGIN OBFUSCATION MAGIC - TTC **********
+/* *** BEGIN OBFUSCATION MAGIC - TIT **********
     Copyright (c) 2014-2015, Dash Developers
         eduffield - evan@dashpay.io
         udjinm6   - udjinm6@dashpay.io
@@ -780,7 +780,7 @@ void CObfuscationPool::ChargeRandomFees()
                 with using it to stop abuse. Otherwise it could serve as an attack vector and
                 allow endless transaction that would bloat TittieCoin and make it unusable. To
                 stop these kinds of attacks 1 in 10 successful transactions are charged. This
-                adds up to a cost of 0.001 TTC per transaction on average.
+                adds up to a cost of 0.001 TIT per transaction on average.
             */
             if (r <= 10) {
                 LogPrintf("CObfuscationPool::ChargeRandomFees -- charging random fees. %u\n", i);
@@ -1916,10 +1916,10 @@ void CObfuscationPool::GetDenominationsToString(int nDenom, std::string& strDeno
 {
     // Function returns as follows:
     //
-    // bit 0 - 100TTC+1 ( bit on if present )
-    // bit 1 - 10TTC+1
-    // bit 2 - 1TTC+1
-    // bit 3 - .1TTC+1
+    // bit 0 - 100TIT+1 ( bit on if present )
+    // bit 1 - 10TIT+1
+    // bit 2 - 1TIT+1
+    // bit 3 - .1TIT+1
     // bit 3 - non-denom
 
 
@@ -1989,10 +1989,10 @@ int CObfuscationPool::GetDenominations(const std::vector<CTxOut>& vout, bool fSi
 
     // Function returns as follows:
     //
-    // bit 0 - 100TTC+1 ( bit on if present )
-    // bit 1 - 10TTC+1
-    // bit 2 - 1TTC+1
-    // bit 3 - .1TTC+1
+    // bit 0 - 100TIT+1 ( bit on if present )
+    // bit 1 - 10TIT+1
+    // bit 2 - 1TIT+1
+    // bit 3 - .1TIT+1
 
     return denom;
 }
@@ -2110,7 +2110,7 @@ bool CObfuScationSigner::IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey)
     uint256 hash;
     if (GetTransaction(vin.prevout.hash, txVin, hash, true)) {
         BOOST_FOREACH (CTxOut out, txVin.vout) {
-            if (out.nValue == 7500000 * COIN) {
+            if (out.nValue == 4000000 * COIN) {
                 if (out.scriptPubKey == payee2) return true;
             }
         }

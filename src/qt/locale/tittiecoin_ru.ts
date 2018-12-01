@@ -160,7 +160,7 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TTCs from being stolen by malware infecting your computer.</source>
+        <source>TittieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TITs from being stolen by malware infecting your computer.</source>
         <translation>TittieCoin сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши TittieCoin от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
@@ -1380,32 +1380,32 @@ Please check the address and try again.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TTC</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 TTC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 TIT</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 TIT</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TTC</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 TTC</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 TIT</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 TIT</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TTC to anonymize 10000 TTC</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 TTC для анонимизации 10000 TTC</translation>
+        <source>This option is the quickest and will cost about ~0.025 TIT to anonymize 10000 TIT</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 TIT для анонимизации 10000 TIT</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TTC to anonymize 10000 TTC</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 TTC для анонимизации 10000 TTC</translation>
+        <source>This option is moderately fast and will cost about 0.05 TIT to anonymize 10000 TIT</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 TIT для анонимизации 10000 TIT</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 TTC per 10000 TTC you anonymize.</source>
-        <translation>0.1 TTC за 10000 TTC которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 TIT per 10000 TIT you anonymize.</source>
+        <translation>0.1 TIT за 10000 TIT которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>

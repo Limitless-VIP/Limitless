@@ -87,10 +87,4 @@ inline uint256 Phi1612(const T1 pbegin, const T1 pend)
     return hash[5].trim256();
 }
 
-
-
-
-
-
-
 #endif // HASHBLOCK_H
