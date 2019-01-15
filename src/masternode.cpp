@@ -415,17 +415,17 @@ bool CMasternodeBroadcast::Create(std::string strService, std::string strKeyMast
 
     CService service = CService(strService);
     int mainnetDefaultPort = Params(CBaseChainParams::MAIN).GetDefaultPort();
-    if (Params().NetworkID() == CBaseChainParams::MAIN) {
-        if (service.GetPort() != mainnetDefaultPort) {
-            strErrorRet = strprintf("Invalid port %u for masternode %s, only %d is supported on mainnet.", service.GetPort(), strService, mainnetDefaultPort);
-            LogPrintf("CMasternodeBroadcast::Create -- %s\n", strErrorRet);
-            return false;
-        }
-    } else if (service.GetPort() == mainnetDefaultPort) {
-        strErrorRet = strprintf("Invalid port %u for masternode %s, %d is the only supported on mainnet.", service.GetPort(), strService, mainnetDefaultPort);
-        LogPrintf("CMasternodeBroadcast::Create -- %s\n", strErrorRet);
-        return false;
-    }
+    //if (Params().NetworkID() == CBaseChainParams::MAIN) {
+        //if (service.GetPort() != mainnetDefaultPort) {
+            //strErrorRet = strprintf("Invalid port %u for masternode %s, only %d is supported on mainnet.", service.GetPort(), strService, mainnetDefaultPort);
+            //LogPrintf("CMasternodeBroadcast::Create -- %s\n", strErrorRet);
+            //return false;
+        //}
+    //} else if (service.GetPort() == mainnetDefaultPort) {
+        //strErrorRet = strprintf("Invalid port %u for masternode %s, %d is the only supported on mainnet.", service.GetPort(), strService, mainnetDefaultPort);
+        //LogPrintf("CMasternodeBroadcast::Create -- %s\n", strErrorRet);
+        //return false;
+    //}
 
     return Create(txin, CService(strService), keyCollateralAddressNew, pubKeyCollateralAddressNew, keyMasternodeNew, pubKeyMasternodeNew, strErrorRet, mnbRet);
 }
