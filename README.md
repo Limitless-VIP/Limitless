@@ -51,7 +51,7 @@ Build Process tittiecoind
 
 Building tittiecoind is very easy and stright forward.
 
-Use the autogen script to prepare the build environment. *Node that you these commands are not run in the src directoty
+Use the autogen script to prepare the build environment. *Note these commands are not run in the src directoty*
 
     ./autogen.sh
     ./configure
