@@ -46,4 +46,14 @@ working on a patch set. Developer Discord can be found https://discord.gg/57bcjw
 
 Credit: Bitcoin Developers, Litecoin Developers and Dash Developers.
 
+Build Process tittiecoind
+-------------------------
+
+Building tittiecoind is very easy and stright forward.
+
+Use the autogen script to prepare the build environment. *Node that you these commands are not run in the src directoty
+
+    ./autogen.sh
+    ./configure
+    make
 
