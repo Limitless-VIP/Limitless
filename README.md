@@ -57,3 +57,9 @@ Use the autogen script to prepare the build environment. *Note these commands ar
     ./configure
     make
 
+**Windows - v2.4 Update**
+-------------------------
+1. Download the new wallet for your machine form `https://tittiecoin.com/wallet`
+2. if your wallet is running please exit the v2.1 wallet. 
+3. Open the zipped folder and pull tittiecoin-qt.exe to the desktop
+4. Run the wallet! (Avast or other antivirus might go crazy, don't worry this is normal. We already submitted the new version.
