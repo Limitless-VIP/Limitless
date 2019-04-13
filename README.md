@@ -1,4 +1,5 @@
 ![TittieCoin](https://github.com/tittiecoin/tittiecoin-2-0/blob/master/src/qt/res/images/dixicoin_logo_horizontal.png)
+
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?&color=success)](https://github.com/Test-Coin/TestCoin/blob/master/LICENSE)
 
 TittieCoin Core - About
