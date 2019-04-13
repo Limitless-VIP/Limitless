@@ -75,3 +75,8 @@ Use the autogen script to prepare the build environment. *Note these commands ar
 2. if your wallet is running please exit the v2.1 wallet. 
 3. Open the zipped folder and pull tittiecoin-core.dmg to the desktop
 4. Run the wallet!
+
+**Current Exchanges**
+-------------------------
+CREX24: https://crex24.com/exchange/tit-BTC
+Amsterdex: https://crex24.com/exchange/tit-BTC
