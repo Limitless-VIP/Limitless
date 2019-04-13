@@ -79,4 +79,5 @@ Use the autogen script to prepare the build environment. *Note these commands ar
 **Current Exchanges**
 -------------------------
 CREX24: https://crex24.com/exchange/tit-BTC
+
 Amsterdex: https://crex24.com/exchange/tit-BTC
