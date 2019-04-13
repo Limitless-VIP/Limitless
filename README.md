@@ -1,3 +1,8 @@
+![TittieCoin](https://github.com/tittiecoin/tittiecoin-2-0/blob/master/src/qt/res/images/dixicoin_logo_horizontal.png)
+
+ 
+
+
 TittieCoin Core - About
 =====================================
 
