@@ -3,22 +3,23 @@
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?&color=success)](https://github.com/TittieCoin/blob/master/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat&logo=Github&color=informational)]()
 [![Latest releases](https://img.shields.io/badge/Download-latest%20wallet%20release-green.svg?style=flat&logo=Skyliner&color=important)](https://github.com/tittiecoin/tittiecoin-2-0/releases)
-[![Discord Chat](https://img.shields.io/discord/473618220524240928.svg?style=flat&logo=Discord)](https://discord.gg/57bcjwBh) 
+[![Discord Chat](https://img.shields.io/discord/473618220524240928.svg?style=flat&logo=Discord)](https://discordapp.com/invite/57bcjwB) 
 
 
 TittieCoin Core - About
 =====================================
 
-What is TittieCoin?
+What is TittieCoin TIT?
 ----------------
 
-TittieCoin (TIT) is a digital currency created by a trusted group of
-developers early Febuary 2014. TIT is currently being developed to be
-the exclusive currency for Tittie Island, a vision that we are working towards.
-The TIT technology enables instant payments to anyone, anywhere in the world, however,
-the main real world use for TittieCoin will be for goods and services on Tittie island. 
-Bitcoin led the way with this technology and was first released In November 2008,
-a paper was posted on the internet under the name Satoshi Nakamotouses peer-to-peer
+TittieCoin (TIT) is a digital currency created by a trusted group of developers in
+early February 2014. The future of TittieCoin TIT is helping to make Breast Cancer
+a thing of the past but the main activity of TittieCoin TIT is to be the exclusive 
+currency for Tittie Island, a vision that the Team are working towards.
+The TittieCoin technology enables instant payments to anyone, anywhere in the world, however,
+the main real world use for TIT will be for goods and services on Tittie island. 
+Bitcoin led the way with this technology and was first released in November 2008,
+a paper was posted on the internet under the name Satoshi Nakamoto uses peer-to-peer
 technology to operate with no central authority: managing transactions and issuing
 money are carried out collectively by the network. TittieCoin Core is the name of
 open source software which enables the use of TIT the currency. 
@@ -33,6 +34,12 @@ been adopted by other digital currencies.
 For more information, as well as an immediately useable, binary version of
 the TittieCoin Core software, see https://tittiecoin.com/, or read the
 [original whitepaper](https://tittiecoin.com/tittiecoin.pdf).
+
+Breast Cancer Charity Support Address
+-------
+
+TPowcQgiQ5EBeMZRGmNDyakxFt1gkPVh5P
+
 
 License
 -------
@@ -57,9 +64,9 @@ Credit: Bitcoin Developers, Litecoin Developers and Dash Developers.
 Build Process tittiecoind
 -------------------------
 
-Building tittiecoind is very easy and stright forward.
+Building tittiecoind is very easy and straight forward.
 
-Use the autogen script to prepare the build environment. *Note these commands are not run in the src directoty*
+Use the autogen script to prepare the build environment. *Note these commands are not run in the src directory*
 
     ./autogen.sh
     ./configure
