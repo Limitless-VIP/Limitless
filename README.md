@@ -3,7 +3,9 @@
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?&color=success)](https://github.com/TittieCoin/blob/master/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat&logo=Github&color=informational)]()
 [![Latest releases](https://img.shields.io/badge/Download-latest%20wallet%20release-green.svg?style=flat&logo=Skyliner&color=important)](https://github.com/tittiecoin/tittiecoin-2-0/releases)
-[![Discord Chat](https://img.shields.io/discord/473618220524240928.svg?style=flat&logo=Discord)](https://discordapp.com/invite/57bcjwB) 
+[![Discord Chat](https://img.shields.io/discord/473618220524240928.svg?style=flat&logo=Discord)](https://discordapp.com/invite/57bcjwB)
+[![Twitter Follow](https://img.shields.io/twitter/follow/altbetofficial.svg?style=social)](https://twitter.com/TittieCoin) 
+#
 
 
 TittieCoin Core - About
