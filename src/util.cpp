@@ -437,13 +437,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\Limitlessv2
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\Limitlessv2
-// Mac: ~/Library/Application Support/Limitlessv2
-// Unix: ~/.Limitlessv2
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Limitless
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Limitless
+// Mac: ~/Library/Application Support/Limitless
+// Unix: ~/.Limitless
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Limitlessv2";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Limitless";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -455,10 +455,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Limitlessv2";
+    return pathRet / "Limitless";
 #else
     // Unix
-    return pathRet / ".Limitlessv2";
+    return pathRet / ".Limitless";
 #endif
 #endif
 }
