@@ -101,7 +101,7 @@ public:
         nMaturity = 60;
         nModifierUpdateBlock = 1;
 		
-        const char* pszTimestamp = "Limitless Official Release";
+        const char* pszTimestamp = "TittieCoin Official Release";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
