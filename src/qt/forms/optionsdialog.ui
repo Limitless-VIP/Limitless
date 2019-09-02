@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start TittieCoin after logging in to the system.</string>
+          <string>Automatically start Limitless after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start TittieCoin on system login</string>
+          <string>&amp;Start Limitless on system login</string>
          </property>
         </widget>
        </item>
@@ -177,12 +177,12 @@
             <string notr="true"/>
            </property>
            <property name="text">
-            <string>Amount of TittieCoin to keep anonymized</string>
+            <string>Amount of Limitless to keep anonymized</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="anonymizeTittieCoin">
+          <widget class="QSpinBox" name="anonymizeLimitless">
            <property name="minimum">
             <number>100</number>
            </property>
@@ -268,7 +268,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the TittieCoin client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the Limitless client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -288,7 +288,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the TittieCoin network through a SOCKS5 proxy.</string>
+          <string>Connect to the Limitless network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -454,7 +454,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting TittieCoin.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting Limitless.</string>
            </property>
           </widget>
          </item>
@@ -476,7 +476,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tittiecoin-project/tittiecoin-project-translations</string>
+https://www.transifex.com/limitless-project/limitless-project-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>

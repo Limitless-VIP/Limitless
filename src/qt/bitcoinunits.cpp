@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The TittieCoin developers
+// Copyright (c) 2017-2018 The Limitless developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(TIT);
-    unitlist.append(mTIT);
-    unitlist.append(uTIT);
+    unitlist.append(VIP);
+    unitlist.append(mVIP);
+    unitlist.append(uVIP);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case TIT:
-    case mTIT:
-    case uTIT:
+    case VIP:
+    case mVIP:
+    case uVIP:
         return true;
     default:
         return false;
@@ -41,12 +41,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case TIT:
-        return QString("tittiecoin");
-    case mTIT:
-        return QString("mtittiecoin");
-    case uTIT:
-        return QString::fromUtf8("utittiecoin");
+    case VIP:
+        return QString("limitless");
+    case mVIP:
+        return QString("mlimitless");
+    case uVIP:
+        return QString::fromUtf8("ulimitless");
     default:
         return QString("???");
     }
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TIT:
-            return QString("TIT");
-        case mTIT:
-            return QString("mTIT");
-        case uTIT:
-            return QString::fromUtf8("μTIT");
+        case VIP:
+            return QString("VIP");
+        case mVIP:
+            return QString("mVIP");
+        case uVIP:
+            return QString::fromUtf8("μVIP");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TIT:
-            return QString("tTIT");
-        case mTIT:
-            return QString("mtTIT");
-        case uTIT:
-            return QString::fromUtf8("μtTIT");
+        case VIP:
+            return QString("tVIP");
+        case mVIP:
+            return QString("mtVIP");
+        case uVIP:
+            return QString::fromUtf8("μtVIP");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TIT:
-            return QString("TIT");
-        case mTIT:
-            return QString("Milli-TIT (1 / 1" THIN_SP_UTF8 "000)");
-        case uTIT:
-            return QString("Micro-TIT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case VIP:
+            return QString("VIP");
+        case mVIP:
+            return QString("Milli-VIP (1 / 1" THIN_SP_UTF8 "000)");
+        case uVIP:
+            return QString("Micro-VIP (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TIT:
-            return QString("TestTITs");
-        case mTIT:
-            return QString("Milli-TestTIT (1 / 1" THIN_SP_UTF8 "000)");
-        case uTIT:
-            return QString("Micro-TestTIT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case VIP:
+            return QString("TestVIPs");
+        case mVIP:
+            return QString("Milli-TestVIP (1 / 1" THIN_SP_UTF8 "000)");
+        case uVIP:
+            return QString("Micro-TestVIP (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case TIT:
+    case VIP:
         return 100000000;
-    case mTIT:
+    case mVIP:
         return 100000;
-    case uTIT:
+    case uVIP:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case TIT:
+    case VIP:
         return 8;
-    case mTIT:
+    case mVIP:
         return 5;
-    case uTIT:
+    case uVIP:
         return 2;
     default:
         return 0;

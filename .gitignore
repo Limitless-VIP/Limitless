@@ -5,8 +5,8 @@
 src/compat/.deps/.dirstamp
 src/compat/.dirstamp
 src/config/stamp-h1
-src/config/tittiecoin-config.h
-src/config/tittiecoin-config.h.in
+src/config/limitless-config.h
+src/config/limitless-config.h.in
 src/crypto/.deps/.dirstamp
 src/crypto/.dirstamp
 src/Makefile

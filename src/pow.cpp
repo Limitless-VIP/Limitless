@@ -17,7 +17,7 @@
 
 unsigned int static DarkGravityWave(const CBlockIndex* pindexLast) 
 {
-    /* current difficulty formula, tittiecoin - DarkGravity v3, written by Evan Duffield - evan@dashpay.io */
+    /* current difficulty formula, limitless - DarkGravity v3, written by Evan Duffield - evan@dashpay.io */
     const CBlockIndex* BlockLastSolved = pindexLast;
     const CBlockIndex* BlockReading = pindexLast;
     int64_t nActualTimespan = 0;

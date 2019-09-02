@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ca">locale/limitless_ca.qm</file>
+        <file alias="da">locale/limitless_da.qm</file>
+        <file alias="de">locale/limitless_de.qm</file>
+        <file alias="en">locale/limitless_en.qm</file>
+        <file alias="en_US">locale/limitless_en_US.qm</file>
+        <file alias="es">locale/limitless_es.qm</file>
+        <file alias="fr_FR">locale/limitless_fr_FR.qm</file>
+        <file alias="it">locale/limitless_it.qm</file>
+        <file alias="ja">locale/limitless_ja.qm</file>
+        <file alias="pt">locale/limitless_pt.qm</file>
+        <file alias="ro_RO">locale/limitless_ro_RO.qm</file>
+        <file alias="ru">locale/limitless_ru.qm</file>
+        <file alias="zh_TW">locale/limitless_zh_TW.qm</file>
+    </qresource>
+</RCC>

@@ -64,15 +64,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += tittiecoind
+  bin_PROGRAMS += limitlessd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += tittiecoin-cli tittiecoin-tx
+  bin_PROGRAMS += limitless-cli limitless-tx
 endif
 
 .PHONY: FORCE
-# tittiecoin core #
+# limitless core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -179,7 +179,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between tittiecoind and tittiecoin-qt
+# server: shared between limitlessd and limitless-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -223,7 +223,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between tittiecoind and tittiecoin-qt, but only linked
+# wallet: shared between limitlessd and limitless-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -301,7 +301,7 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue_escapes.h \
   univalue/univalue.h
 
-# common: shared between tittiecoind, and tittiecoin-qt and non-server tools
+# common: shared between limitlessd, and limitless-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   allocators.cpp \
@@ -357,7 +357,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between tittiecoin-cli and tittiecoin-qt
+# cli: shared between limitless-cli and limitless-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -367,7 +367,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-tittiecoind_LDADD = \
+limitlessd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -378,40 +378,40 @@ tittiecoind_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-tittiecoind_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+limitlessd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-tittiecoind_LDADD += libbitcoin_wallet.a
+limitlessd_LDADD += libbitcoin_wallet.a
 endif
-tittiecoind_SOURCES = tittiecoind.cpp
+limitlessd_SOURCES = limitlessd.cpp
 #
 
 if TARGET_WINDOWS
-tittiecoind_SOURCES += tittiecoind-res.rc
+limitlessd_SOURCES += limitlessd-res.rc
 endif
 
-tittiecoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-tittiecoind_CPPFLAGS = $(BITCOIN_INCLUDES)
-tittiecoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+limitlessd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+limitlessd_CPPFLAGS = $(BITCOIN_INCLUDES)
+limitlessd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# tittiecoin-cli binary #
-tittiecoin_cli_LDADD = \
+# limitless-cli binary #
+limitless_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
   $(SSL_LIBS) \
   $(CRYPTO_LIBS)
 
-tittiecoin_cli_SOURCES = \
-  tittiecoin-cli.cpp
+limitless_cli_SOURCES = \
+  limitless-cli.cpp
 
-tittiecoin_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+limitless_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
-# tittiecoin-tx binary #
-tittiecoin_tx_LDADD = \
+# limitless-tx binary #
+limitless_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -420,15 +420,15 @@ tittiecoin_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-tittiecoin_tx_SOURCES = tittiecoin-tx.cpp
-tittiecoin_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+limitless_tx_SOURCES = limitless-tx.cpp
+limitless_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-tittiecoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+limitless_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-tittiecoin_cli_SOURCES += tittiecoin-cli-res.rc
+limitless_cli_SOURCES += limitless-cli-res.rc
 endif
-tittiecoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+limitless_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

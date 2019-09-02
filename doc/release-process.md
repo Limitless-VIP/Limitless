@@ -3,7 +3,7 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/TittieCoin-Project/TittieCoin/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/Limitless-Project/Limitless/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
@@ -24,12 +24,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/tittiecoin-project/gitian.sigs.git
-    git clone https://github.com/tittiecoin-project/tittiecoin-detached-sigs.git
+    git clone https://github.com/limitless-project/gitian.sigs.git
+    git clone https://github.com/limitless-project/limitless-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/tittiecoin-project/tittiecoin.git
+    git clone https://github.com/limitless-project/limitless.git
 
-### TittieCoin maintainers/release engineers, suggestion for writing release notes
+### Limitless maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -50,7 +50,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./tittiecoin
+    pushd ./limitless
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -84,7 +84,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../tittiecoin/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../limitless/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -92,50 +92,50 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url tittiecoin=/path/to/tittiecoin,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url limitless=/path/to/limitless,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign TittieCoin Core for Linux, Windows, and OS X:
+### Build and sign Limitless Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit tittiecoin=v${VERSION} ../tittiecoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../tittiecoin/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/tittiecoin-*.tar.gz build/out/src/tittiecoin-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit limitless=v${VERSION} ../limitless/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../limitless/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/limitless-*.tar.gz build/out/src/limitless-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit tittiecoin=v${VERSION} ../tittiecoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../tittiecoin/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/tittiecoin-*-win-unsigned.tar.gz inputs/tittiecoin-win-unsigned.tar.gz
-    mv build/out/tittiecoin-*.zip build/out/tittiecoin-*.exe ../
+    ./bin/gbuild --memory 3000 --commit limitless=v${VERSION} ../limitless/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../limitless/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/limitless-*-win-unsigned.tar.gz inputs/limitless-win-unsigned.tar.gz
+    mv build/out/limitless-*.zip build/out/limitless-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit tittiecoin=v${VERSION} ../tittiecoin/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../tittiecoin/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/tittiecoin-*-osx-unsigned.tar.gz inputs/tittiecoin-osx-unsigned.tar.gz
-    mv build/out/tittiecoin-*.tar.gz build/out/tittiecoin-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit limitless=v${VERSION} ../limitless/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../limitless/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/limitless-*-osx-unsigned.tar.gz inputs/limitless-osx-unsigned.tar.gz
+    mv build/out/limitless-*.tar.gz build/out/limitless-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`tittiecoin-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`tittiecoin-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`tittiecoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `tittiecoin-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`tittiecoin-${VERSION}-osx-unsigned.dmg`, `tittiecoin-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`limitless-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`limitless-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`limitless-${VERSION}-win[32|64]-setup-unsigned.exe`, `limitless-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`limitless-${VERSION}-osx-unsigned.dmg`, `limitless-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import tittiecoin/contrib/gitian-keys/*.pgp
+    gpg --import limitless/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../tittiecoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../tittiecoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../tittiecoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../limitless/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../limitless/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../limitless/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -156,22 +156,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer tittiecoin-osx-unsigned.tar.gz to osx for signing
-    tar xf tittiecoin-osx-unsigned.tar.gz
+    transfer limitless-osx-unsigned.tar.gz to osx for signing
+    tar xf limitless-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf tittiecoin-win-unsigned.tar.gz
+    tar xf limitless-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/tittiecoin-detached-sigs
+    cd ~/limitless-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -184,25 +184,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [tittiecoin-detached-sigs](https://github.com/TittieCoin-Project/tittiecoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [limitless-detached-sigs](https://github.com/Limitless-Project/limitless-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../tittiecoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../tittiecoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../tittiecoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/tittiecoin-osx-signed.dmg ../tittiecoin-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../limitless/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../limitless/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../limitless/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/limitless-osx-signed.dmg ../limitless-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../tittiecoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../tittiecoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../tittiecoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/tittiecoin-*win64-setup.exe ../tittiecoin-${VERSION}-win64-setup.exe
-    mv build/out/tittiecoin-*win32-setup.exe ../tittiecoin-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../limitless/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../limitless/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../limitless/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/limitless-*win64-setup.exe ../limitless-${VERSION}-win64-setup.exe
+    mv build/out/limitless-*win32-setup.exe ../limitless-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -224,23 +224,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-tittiecoin-${VERSION}-aarch64-linux-gnu.tar.gz
-tittiecoin-${VERSION}-arm-linux-gnueabihf.tar.gz
-tittiecoin-${VERSION}-i686-pc-linux-gnu.tar.gz
-tittiecoin-${VERSION}-x86_64-linux-gnu.tar.gz
-tittiecoin-${VERSION}-osx64.tar.gz
-tittiecoin-${VERSION}-osx.dmg
-tittiecoin-${VERSION}.tar.gz
-tittiecoin-${VERSION}-win32-setup.exe
-tittiecoin-${VERSION}-win32.zip
-tittiecoin-${VERSION}-win64-setup.exe
-tittiecoin-${VERSION}-win64.zip
+limitless-${VERSION}-aarch64-linux-gnu.tar.gz
+limitless-${VERSION}-arm-linux-gnueabihf.tar.gz
+limitless-${VERSION}-i686-pc-linux-gnu.tar.gz
+limitless-${VERSION}-x86_64-linux-gnu.tar.gz
+limitless-${VERSION}-osx64.tar.gz
+limitless-${VERSION}-osx.dmg
+limitless-${VERSION}.tar.gz
+limitless-${VERSION}-win32-setup.exe
+limitless-${VERSION}-win32.zip
+limitless-${VERSION}-win64-setup.exe
+limitless-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the tittiecoin.com server*.
+space *do not upload these to the limitless.com server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -256,10 +256,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/tittiecoin, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/limitless, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/TittieCoin-Project/TittieCoin/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/Limitless-Project/Limitless/releases/new) with a link to the archived release notes.
 
   - Celebrate

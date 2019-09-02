@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * TittieCoin RPC command dispatcher.
+ * Limitless RPC command dispatcher.
  */
 class CRPCTable
 {

@@ -1,0 +1,26 @@
+[Unit]
+Description=Limitless's distributed currency daemon
+After=network.target
+
+[Service]
+User=limitless
+Group=limitless
+
+Type=forking
+PIDFile=/var/lib/limitlessd/limitlessd.pid
+
+ExecStart=/usr/bin/limitlessd -daemon -pid=/var/lib/limitlessd/limitlessd.pid \
+          -conf=/etc/limitless/limitless.conf -datadir=/var/lib/limitlessd
+
+ExecStop=-/usr/bin/limitless-cli -conf=/etc/limitless/limitless.conf \
+         -datadir=/var/lib/limitlessd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

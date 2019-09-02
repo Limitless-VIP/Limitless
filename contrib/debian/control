@@ -1,4 +1,4 @@
-Source: tittiecoin
+Source: limitless
 Section: utils
 Priority: optional
 Maintainer: Jonas Smedegaard <dr@jones.dk> ***TODO***
@@ -22,15 +22,15 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.tittiecoin.com
-Vcs-Git: git://github.com/TittieCoin-Project/TittieCoin.git
-Vcs-Browser: http://github.com/TittieCoin-Project/TittieCoin
+Homepage: http://www.limitless.com
+Vcs-Git: git://github.com/Limitless-Project/Limitless.git
+Vcs-Browser: http://github.com/Limitless-Project/Limitless
 
-Package: tittiecoind
+Package: limitlessd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- TittieCoin is a free open source peer-to-peer electronic cash system that
+ Limitless is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -39,14 +39,14 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides the daemon, tittiecoind, and the CLI tool
- tittiecoin-cli to interact with the daemon.
+ This package provides the daemon, limitlessd, and the CLI tool
+ limitless-cli to interact with the daemon.
 
-Package: tittiecoin-qt
+Package: limitless-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- TittieCoin is a free open source peer-to-peer electronic cash system that
+ Limitless is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -55,4 +55,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides TittieCoin-Qt, a GUI for TittieCoin based on Qt.
+ This package provides Limitless-Qt, a GUI for Limitless based on Qt.

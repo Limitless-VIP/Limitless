@@ -1,39 +1,39 @@
-TittieCoin Core
+Limitless Core
 =====================
 
 Setup
 ---------------------
-[TittieCoin Core](http://tittiecoin.com/wallet) is the original TittieCoin client and it builds the backbone of the network. However, it downloads and stores the entire history of TittieCoin transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Limitless Core](http://limitless.com/wallet) is the original Limitless client and it builds the backbone of the network. However, it downloads and stores the entire history of Limitless transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run TittieCoin on your native platform.
+The following are some helpful notes on how to run Limitless on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/tittiecoin-qt (GUI, 32-bit) or bin/32/tittiecoind (headless, 32-bit)
-- bin/64/tittiecoin-qt (GUI, 64-bit) or bin/64/tittiecoind (headless, 64-bit)
+- bin/32/limitless-qt (GUI, 32-bit) or bin/32/limitlessd (headless, 32-bit)
+- bin/64/limitless-qt (GUI, 64-bit) or bin/64/limitlessd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run tittiecoin-qt.exe.
+Unpack the files into a directory, and then run limitless-qt.exe.
 
 ### OSX
 
-Drag TittieCoin-Qt to your applications folder, and then run TittieCoin-Qt.
+Drag Limitless-Qt to your applications folder, and then run Limitless-Qt.
 
 ### Need Help?
 
-* See the documentation at the [TittieCoin Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [Limitless Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=437695.0) or on the [TittieCoin Discord](https://discordapp.com/invite/57bcjwB).
-* Or join us on Telegram [TittieCoin Telegram](https://t.me/TittieCoin_Official).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=437695.0) or on the [Limitless Discord](https://discordapp.com/invite/57bcjwB).
+* Or join us on Telegram [Limitless Telegram](https://t.me/Limitless_Official).
 
 Building
 ---------------------
-The following are developer notes on how to build TittieCoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Limitless on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build TittieCoin on your native plat
 
 Development
 ---------------------
-The TittieCoin repo's [root README](https://github.com/TittieCoin-Project/TittieCoin/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Limitless repo's [root README](https://github.com/Limitless-Project/Limitless/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -55,8 +55,8 @@ The TittieCoin repo's [root README](https://github.com/TittieCoin-Project/Tittie
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=437695.0) or the [TittieCoin Discord](https://discordapp.com/invite/57bcjwB) forum.
-* Join the Telegram channel [TittieCoin Telegram](https://t.me/TittieCoin_Official).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=437695.0) or the [Limitless Discord](https://discordapp.com/invite/57bcjwB) forum.
+* Join the Telegram channel [Limitless Telegram](https://t.me/Limitless_Official).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

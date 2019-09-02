@@ -3,7 +3,7 @@ dist: trusty
 
 #workaround for https://github.com/travis-ci/travis-ci/issues/5227
 addons:
-  hostname: tittiecoin-tester
+  hostname: limitless-tester
 
 os: linux
 language: generic

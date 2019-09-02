@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The TittieCoin developers
+// Copyright (c) 2017-2018 The Limitless developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #include "chainparams.h"
@@ -91,17 +91,17 @@ public:
         pchMessageStart[3] = 0xaa;
         vAlertPubKey = ParseHex("038b1d2e9faafacd8dfb20fa8f1ae9943def3b334808ebd0790d69a50d70d5f236");
         nDefaultPort = 8007;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // TittieCoin starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Limitless starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // TittieCoin: 1 minute
-        nTargetSpacing = 1 * 60;  // TittieCoin: 1 minute
+        nTargetTimespan = 1 * 60; // Limitless: 1 minute
+        nTargetSpacing = 1 * 60;  // Limitless: 1 minute
         nLastPOWBlock = 15000;
         nMaturity = 60;
         nModifierUpdateBlock = 1;
 		
-        const char* pszTimestamp = "TittieCoin Official Release";
+        const char* pszTimestamp = "Limitless Official Release";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -170,8 +170,8 @@ public:
         vAlertPubKey = ParseHex("000010e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9");
         nDefaultPort = 6804;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // TittieCoin: 1 day
-        nTargetSpacing = 1 * 60;  // TittieCoin: 1 minute
+        nTargetTimespan = 1 * 60; // Limitless: 1 day
+        nTargetSpacing = 1 * 60;  // Limitless: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
@@ -181,18 +181,18 @@ public:
         //assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "tittiecoin-testnet.seed.fuzzbawls.pw"));
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "tittiecoin-testnet.seed2.fuzzbawls.pw"));
+        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "limitless-testnet.seed.fuzzbawls.pw"));
+        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "limitless-testnet.seed2.fuzzbawls.pw"));
         vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net"));
         vSeeds.push_back(CDNSSeedData("88.198.192.110", "88.198.192.110"));
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet tittiecoin addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet tittiecoin script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet limitless addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet limitless script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet tittiecoin BIP32 pubkeys start with 'DRKV'
+        // Testnet limitless BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet tittiecoin BIP32 prvkeys start with 'DRKP'
+        // Testnet limitless BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet tittiecoin BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet limitless BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x01)(0x00)(0x00)(0x80).convert_to_container<std::vector<unsigned char> >();
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
         fRequireRPCPassword = true;
@@ -230,8 +230,8 @@ public:
         pchMessageStart[3] = 0xac;
         nSubsidyHalvingInterval = 150;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // TittieCoin: 1 day
-        nTargetSpacing = 1 * 60;        // TittieCoin: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // Limitless: 1 day
+        nTargetSpacing = 1 * 60;        // Limitless: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1454124731;
         genesis.nBits = 0x207fffff;

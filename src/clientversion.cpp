@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both tittiecoind and tittiecoin-qt, to make it harder for attackers to
+ * for both limitlessd and limitless-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("TittieCoin Core");
+const std::string CLIENT_NAME("Limitless Core");
 
 /**
  * Client version number

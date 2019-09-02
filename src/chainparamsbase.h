@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between tittiecoin-cli and tittiecoind)
- * of a given instance of the TittieCoin system.
+ * CBaseChainParams defines the base parameters (shared between limitless-cli and limitlessd)
+ * of a given instance of the Limitless system.
  */
 class CBaseChainParams
 {

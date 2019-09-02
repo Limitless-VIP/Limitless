@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package tittiecoind/tittiecoin-qt
-for Debian-based Linux systems. If you compile tittiecoind/tittiecoin-qt yourself, there are some useful files here.
+This directory contains files used to package limitlessd/limitless-qt
+for Debian-based Linux systems. If you compile limitlessd/limitless-qt yourself, there are some useful files here.
 
-## tittiecoin: URI support ##
+## limitless: URI support ##
 
 
-tittiecoin-qt.desktop  (Gnome / Open Desktop)
+limitless-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install tittiecoin-qt.desktop
+	sudo desktop-file-install limitless-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your tittiecoinqt binary to `/usr/bin`
-and the `../../share/pixmaps/tittiecoin128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your limitlessqt binary to `/usr/bin`
+and the `../../share/pixmaps/limitless128.png` to `/usr/share/pixmaps`
 
-tittiecoin-qt.protocol (KDE)
+limitless-qt.protocol (KDE)
 
