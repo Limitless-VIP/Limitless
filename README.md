@@ -34,7 +34,7 @@ been adopted by other digital currencies.
 
 For more information, as well as an immediately useable, binary version of
 the Limitless Core software, see https://limitlessvip.co.za, or read the
-[original whitepaper](https://limitlessvip.co.za/Limitless_VIP_White_Paper.pdf).
+[original whitepaper](https://limitlessvip.co.za/public/Limitless_VIP_White_Paper.pdf).
 
 Breast Cancer Charity Support Address
 -------
