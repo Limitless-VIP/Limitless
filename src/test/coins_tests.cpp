@@ -1,10 +1,15 @@
-// Copyright (c) 2014 The Bitcoin Core developers
+// Copyright (c) 2014-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "coins.h"
 #include "random.h"
 #include "uint256.h"
+#include "test/test_limitless.h"
 
 #include <vector>
 #include <map>
@@ -60,7 +65,7 @@ public:
 };
 }
 
-BOOST_AUTO_TEST_SUITE(coins_tests)
+BOOST_FIXTURE_TEST_SUITE(coins_tests, BasicTestingSetup)
 
 static const unsigned int NUM_SIMULATION_ITERATIONS = 40000;
 

@@ -1,57 +1,61 @@
-TOR SUPPORT IN Limitless
-=======================
+# Tor support in Limitless
 
-It is possible to run Limitless as a Tor hidden service, and connect to such services.
+It is possible to run Limitless as a Tor hidden service, and connect to such
+services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
-distributions default to having a SOCKS proxy listening on port 9050, but others
-may not. In particular, the Tor Browser Bundle defaults to listening on a random
-port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort)
+distributions default to having a SOCKS proxy listening on port 9050, but
+others may not. In particular, the Tor Browser Bundle defaults to listening on
+a random port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort)
 for how to properly configure Tor.
 
+### Run Limitless behind a Tor proxy
 
-Run Limitless behind a Tor proxy
-----------------------------------
+The first step is running Limitless behind a Tor proxy. This will already make
+all outgoing connections be anonymized, but more is possible.
 
-The first step is running Limitless behind a Tor proxy. This will already make all
-outgoing connections be anonymized, but more is possible.
 ```
--proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
-                server will be used to try to reach .onion addresses as well.
+-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this
+                proxy server will be used to try to reach .onion addresses as
+                well.
 
 -onion=ip:port  Set the proxy server to use for tor hidden services. You do not
-                need to set this if it's the same as -proxy. You can use -noonion
-                to explicitly disable access to hidden service.
+                need to set this if it's the same as -proxy. You can use
+                -noonion to explicitly disable access to hidden service.
 
--listen         When using -proxy, listening is disabled by default. If you want
-                to run a hidden service (see next section), you'll need to enable
-                it explicitly.
+-listen         When using -proxy, listening is disabled by default. If you
+                want to run a hidden service (see next section), you'll need to
+                enable it explicitly.
 
--connect=X      When behind a Tor proxy, you can specify .onion addresses instead
--addnode=X      of IP addresses or hostnames in these parameters. It requires
--seednode=X     SOCKS5. In Tor mode, such addresses can also be exchanged with
-                other P2P nodes.
+-connect=X
+-addnode=X
+-seednode=X     When behind a Tor proxy, you can specify .onion addresses
+                instead of IP addresses or hostnames in these parameters. It
+                requires SOCKS5. In Tor mode, such addresses can also be
+                exchanged with other P2P nodes.
 
 -onlynet=tor    Only connect to .onion nodes and drop IPv4/6 connections.
 ```
 
 An example how to start the client if the Tor proxy is running on local host on
 port 9050 and only allows .onion nodes to connect:
+
 ```
-./limitlessd -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:989
+./limitlessd -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=nvvgnxdfnlwdgbdn.onion:8007
 ```
 
 In a typical situation, this suffices to run behind a Tor proxy:
+
 ```
 ./limitlessd -proxy=127.0.0.1:9050
 ```
 
-Run a Limitless hidden server
--------------------------------
+### Run a Limitless hidden server
 
-If you configure your Tor system accordingly, it is possible to make your node also
-reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
-config file):
+If you configure your Tor system accordingly, it is possible to make your node
+also reachable from the Tor network. Add these lines to your `/etc/tor/torrc`
+(or equivalent config file):
+
 ```
 ClientOnly 1
 SOCKSPort 9050
@@ -59,7 +63,7 @@ SOCKSPolicy accept 127.0.0.1/8
 Log notice file /var/log/tor/notices.log
 ControlPort 9051
 HiddenServiceDir /var/lib/tor/dnet/
-HiddenServicePort 989 127.0.0.1:50020
+HiddenServicePort 989 127.0.0.1:8007
 HiddenServiceStatistics 0
 ORPort 9001
 LongLivedPorts 989
@@ -68,59 +72,62 @@ DisableDebuggerAttachment 0
 NumEntryGuards 8
 ```
 
-The directory can be different of course, but (both) port numbers should be equal to
-your limitlessd's P2P listen port (50020 by default).
-```
--externalip=X   You can tell limitless about its publicly reachable address using
-                this option, and this can be a .onion address. Given the above
-                configuration, you can find your onion address in
-                /var/lib/tor/limitless-service/hostname. Onion addresses are given
-                preference for your node to advertize itself with, for connections
-                coming from unroutable addresses (such as 127.0.0.1, where the
-                Tor proxy typically runs).
+The directory can be different of course, but (both) port numbers should be
+equal to your limitlessd's P2P listen port (8007 by default).
 
--listen         You'll need to enable listening for incoming connections, as this
-                is off by default behind a proxy.
-
--discover       When -externalip is specified, no attempt is made to discover local
-                IPv4 or IPv6 addresses. If you want to run a dual stack, reachable
-                from both Tor and IPv4 (or IPv6), you'll need to either pass your
-                other addresses using -externalip, or explicitly enable -discover.
-                Note that both addresses of a dual-stack system may be easily
-                linkable using traffic analysis.
 ```
+-externalip=X   You can tell limitless about its publicly reachable addressi
+                using this option, and this can be a .onion address. Given the
+                above configuration, you can find your onion address in
+                `/var/lib/tor/limitless-service/hostname`. Onion addresses are
+                given preference for your node to advertize itself with, for
+                connections coming from unroutable addresses (such as
+                127.0.0.1, where the Tor proxy typically runs).
 
-In a typical situation, where you're only reachable via Tor, this should suffice:
-```
-./limitlessd -proxy=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -listen
+-listen         You'll need to enable listening for incoming connections, as
+                this is off by default behind a proxy.
+
+-discover       When -externalip is specified, no attempt is made to discover
+                local IPv4 or IPv6 addresses. If you want to run a dual stack,
+                reachable from both Tor and IPv4 (or IPv6), you'll need to
+                either pass your other addresses using -externalip, or
+                explicitly enable -discover. Note that both addresses of a
+                dual-stack system may be easily linkable using traffic
+                analysis.
 ```
 
-(obviously, replace the Onion address with your own). If you don't care too much
-about hiding your node, and want to be reachable on IPv4 as well, additionally
-specify:
+In a typical situation, where you're only reachable via Tor, this should
+suffice:
+
+```
+./limitlessd -proxy=127.0.0.1:9050 -externalip=nvvgnxdfnlwdgbdn.onion:8007 -listen
+```
+
+(obviously, replace the Onion address with your own). If you don't care too
+much about hiding your node, and want to be reachable on IPv4 as well,
+additionally specify:
+
 ```
 ./limitlessd ... -discover
 ```
 
-and open port 50020 on your firewall (or use -upnp).
+and open port 8007 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
+
 ```
-./limitlessd -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
+./limitlessd -onion=127.0.0.1:9050 -externalip=nvvgnxdfnlwdgbdn.onion:8007 -discover
 ```
 
-List of known Limitless Tor relays
-------------------------------------
+### List of known Limitless Tor relays
+
 ```
-y5kcscnhpygvvnjn.onion:989
-5bmhtjvn2jvwpiej.onion:989
-pyfdxkazur3iib7y.onion:989
-ok3ym5zy6m5klimk.onion:989
-i6vpvzk2jxuqqs5f.onion:989
-bgdhpb76fkbw5fmg.onion:989
-gtlqzb5zbws5di7g.onion:989
-f7j2m26rptm5f7af.onion:989
-dnetzj6l4cvo2fxy.onion:989
-s3v3n7xhqafg6sb7.onion:989
+nvvgnxdfnlwdgbdn.onion:8007
+6bj7tcfi5ehv3far.onion:8007
+6g6mvsxdxbepeat7.onion:8007
+g5katg5hkj5xvmda.onion:8007
+nrnxauprjfnm6ugr.onion:8007
+v6edtkyoqqmriit2.onion:8007
+crxuxcibrbuhxuzk.onion:8007
 ```

@@ -1,1 +1,2 @@
-contrib/limitlessd.bash-completion	limitlessd
+contrib/limitlessd.bash-completion limitlessd
+contrib/limitless-cli.bash-completion limitless-cli

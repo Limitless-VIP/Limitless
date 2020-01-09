@@ -1,8 +1,9 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Limitless developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_BITCOINUNITS_H
@@ -44,9 +45,10 @@
 #define THIN_SP_UTF8 REAL_THIN_SP_UTF8
 #define THIN_SP_HTML HTML_HACK_SP
 
-/** Limitless unit definitions. Encapsulates parsing and formatting
-   and serves as list model for drop-down selection boxes.
-*/
+/*
+ * VIP unit definitions. Encapsulates parsing and formatting
+ * and serves as list model for drop-down selection boxes.
+ */
 class BitcoinUnits : public QAbstractListModel
 {
     Q_OBJECT
@@ -54,8 +56,9 @@ class BitcoinUnits : public QAbstractListModel
 public:
     explicit BitcoinUnits(QObject* parent);
 
-    /** Limitless units.
-      @note Source: https://en.bitcoin.it/wiki/Units . Please add only sensible ones
+    /*
+     * VIP units.
+     * @note Source: 'https://en.bitcoin.it/wiki/Units'. Please add only sensible ones
      */
     enum Unit {
         VIP,

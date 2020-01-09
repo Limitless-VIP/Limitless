@@ -2,12 +2,20 @@
 <context>
     <name>AddressBookPage</name>
     <message>
+        <source>Right-click to edit address or label</source>
+        <translation>右クリックでアドレスもしくはラベルを編集</translation>
+    </message>
+    <message>
         <source>Create a new address</source>
         <translation>新しいアドレスを作成</translation>
     </message>
     <message>
         <source>&amp;New</source>
         <translation>＆新規</translation>
+    </message>
+    <message>
+        <source>Copy the currently selected address to the system clipboard</source>
+        <translation>クリップボードへ現在選択しているアドレスをコピー</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -101,6 +109,9 @@
     </message>
     </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>Address:</source>
@@ -134,6 +145,9 @@
     <name>FreespaceChecker</name>
     </context>
 <context>
+    <name>GovernancePage</name>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     </context>
 <context>
@@ -154,7 +168,7 @@
     </message>
     </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MultisigDialog</name>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -170,6 +184,12 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
+    </context>
+<context>
+    <name>ProposalFrame</name>
     </context>
 <context>
     <name>QObject</name>
@@ -192,6 +212,10 @@
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Address</source>
+        <translation>アドレス</translation>
+    </message>
     </context>
 <context>
     <name>SendCoinsDialog</name>
@@ -250,6 +274,9 @@
         <source>&amp;Export</source>
         <translation>＆エクスポート</translation>
     </message>
+    </context>
+<context>
+    <name>ZVipControlDialog</name>
     </context>
 <context>
     <name>limitless-core</name>

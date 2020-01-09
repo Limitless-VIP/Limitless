@@ -1,0 +1,81 @@
+policy_module(limitless, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type limitless_t;
+type limitless_exec_t;
+init_daemon_domain(limitless_t, limitless_exec_t)
+
+permissive limitless_t;
+
+type limitless_initrc_exec_t;
+init_script_file(limitless_initrc_exec_t)
+
+type limitless_conf_t;
+files_type(limitless_conf_t)
+
+type limitless_var_lib_t;
+files_type(limitless_var_lib_t)
+
+type limitless_var_run_t;
+files_type(limitless_var_run_t)
+
+type limitless_port_t;
+corenet_port(limitless_port_t)
+
+########################################
+#
+# limitless local policy
+#
+allow limitless_t self:process { fork };
+
+allow limitless_t self:fifo_file rw_fifo_file_perms;
+allow limitless_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(limitless_t, limitless_conf_t, limitless_conf_t)
+manage_files_pattern(limitless_t, limitless_conf_t, limitless_conf_t)
+
+manage_dirs_pattern(limitless_t, limitless_var_lib_t, limitless_var_lib_t)
+manage_files_pattern(limitless_t, limitless_var_lib_t, limitless_var_lib_t)
+files_var_lib_filetrans(limitless_t, limitless_var_lib_t, { dir file })
+
+manage_dirs_pattern(limitless_t, limitless_var_run_t, limitless_var_run_t)
+manage_files_pattern(limitless_t, limitless_var_run_t, limitless_var_run_t)
+
+sysnet_dns_name_resolve(limitless_t)
+corenet_all_recvfrom_unlabeled(limitless_t)
+
+allow limitless_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(limitless_t)
+corenet_tcp_sendrecv_generic_node(limitless_t)
+corenet_tcp_sendrecv_all_ports(limitless_t)
+corenet_tcp_bind_generic_node(limitless_t)
+
+gen_require(`
+    type limitless_port_t;
+')
+allow limitless_t limitless_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type limitless_port_t;
+')
+allow limitless_t limitless_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(limitless_t)
+
+files_read_etc_files(limitless_t)
+
+miscfiles_read_localization(limitless_t)
+
+sysnet_dns_name_resolve(limitless_t)
+
+allow limitless_t limitless_exec_t:file execute_no_trans;
+allow limitless_t self:process setsched;
+corecmd_exec_ls(limitless_t)
+corenet_tcp_connect_http_port(limitless_t)
+dev_read_urand(limitless_t)
+fs_getattr_xattr_fs(limitless_t)
+kernel_read_system_state(limitless_t)

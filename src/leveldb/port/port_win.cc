@@ -21,7 +21,7 @@
 // WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
 // DISCLAIMED. IN NO EVENT SHALL THE REGENTS AND CONTRIBUTORS BE LIABLE FOR ANY
 // DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSVIPUTE GOODS OR SERVICES;
+// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
 // LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 // ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
@@ -32,6 +32,7 @@
 
 #include <windows.h>
 #include <cassert>
+#include <intrin.h>
 
 namespace leveldb {
 namespace port {
@@ -141,6 +142,16 @@ void* AtomicPointer::NoBarrier_Load() const {
 
 void AtomicPointer::NoBarrier_Store(void* v) {
   rep_ = v;
+}
+
+bool HasAcceleratedCRC32C() {
+#if defined(__x86_64__) || defined(__i386__)
+  int cpu_info[4];
+  __cpuid(cpu_info, 1);
+  return (cpu_info[2] & (1 << 20)) != 0;
+#else
+  return false;
+#endif
 }
 
 }

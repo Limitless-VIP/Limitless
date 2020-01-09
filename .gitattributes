@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Expand several placeholders when adding this file to an archive
+src/clientversion.cpp export-subst

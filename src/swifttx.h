@@ -1,9 +1,10 @@
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
 
-// Copyright (c) 2009-2012 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Limitless developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 #ifndef SWIFTTX_H
 #define SWIFTTX_H
 
@@ -17,7 +18,7 @@
 
 /*
     At 15 signatures, 1/2 of the masternode network can be owned by
-    one party without comprimising the security of SwiftTX
+    one party without comprimising the security of SwiftX
     (1000/2150.0)**10 = 0.00047382219560689856
     (1000/2900.0)**10 = 2.3769498616783657e-05
 
@@ -27,8 +28,6 @@
 #define SWIFTTX_SIGNATURES_REQUIRED 6
 #define SWIFTTX_SIGNATURES_TOTAL 10
 
-using namespace std;
-using namespace boost;
 
 class CConsensusVote;
 class CTransaction;
@@ -36,10 +35,10 @@ class CTransactionLock;
 
 static const int MIN_SWIFTTX_PROTO_VERSION = 70103;
 
-extern map<uint256, CTransaction> mapTxLockReq;
-extern map<uint256, CTransaction> mapTxLockReqRejected;
-extern map<uint256, CConsensusVote> mapTxLockVote;
-extern map<uint256, CTransactionLock> mapTxLocks;
+extern std::map<uint256, CTransaction> mapTxLockReq;
+extern std::map<uint256, CTransaction> mapTxLockReqRejected;
+extern std::map<uint256, CConsensusVote> mapTxLockVote;
+extern std::map<uint256, CTransactionLock> mapTxLocks;
 extern std::map<COutPoint, uint256> mapLockedInputs;
 extern int nCompleteTXLocks;
 
@@ -61,6 +60,9 @@ bool ProcessConsensusVote(CNode* pnode, CConsensusVote& ctx);
 
 // keep transaction locks in memory for an hour
 void CleanTransactionLocksList();
+
+// get the accepted transaction lock signatures
+int GetTransactionLockSignatures(uint256 txHash);
 
 int64_t GetAverageVoteTime();
 

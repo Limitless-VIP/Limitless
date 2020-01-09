@@ -1,6 +1,6 @@
 [Desktop Entry]
-Encoding=UTF-8
-Name=Limitless
+Version=3.0.0
+Name=Limitless Core
 Comment=Limitless P2P Cryptocurrency
 Comment[fr]=Limitless, monnaie virtuelle cryptographique pair à pair
 Comment[tr]=Limitless, eşten eşe kriptografik sanal para birimi
@@ -10,3 +10,4 @@ Type=Application
 Icon=limitless128
 MimeType=x-scheme-handler/limitless;
 Categories=Office;Finance;
+StartupWMClass=limitless-qt

@@ -1,5 +1,9 @@
-// Copyright (c) 2011-2013 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_OPTIONSDIALOG_H
@@ -9,6 +13,7 @@
 
 class OptionsModel;
 class QValidatedLineEdit;
+class QLineEdit;
 
 QT_BEGIN_NAMESPACE
 class QDataWidgetMapper;
@@ -30,6 +35,7 @@ public:
 
     void setModel(OptionsModel* model);
     void setMapper();
+    void setCurrentIndex(int index);
 
 protected:
     bool eventFilter(QObject* object, QEvent* event);
@@ -45,12 +51,14 @@ private slots:
     void on_okButton_clicked();
     void on_cancelButton_clicked();
 
+    void updateHideOrphans(bool fHide);
+
     void showRestartWarning(bool fPersistent = false);
     void clearStatusLabel();
-    void doProxyIpChecks(QValidatedLineEdit* pUiProxyIp, int nProxyPort);
+    void doProxyIpChecks(QValidatedLineEdit* pUiProxyIp, QLineEdit* pUiProxyPort);
 
 signals:
-    void proxyIpChecks(QValidatedLineEdit* pUiProxyIp, int nProxyPort);
+    void proxyIpChecks(QValidatedLineEdit* pUiProxyIp, QLineEdit* pUiProxyPort);
 
 private:
     Ui::OptionsDialog* ui;

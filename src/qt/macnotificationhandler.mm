@@ -1,7 +1,9 @@
-// Copyright (c) 2011-2013 The Bitcoin Core developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Limitless developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "macnotificationhandler.h"
@@ -15,7 +17,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.limitless.Limitless-Qt";
+        return @"io.limitless.Limitless-Vip-Qt";
     } else {
         return [self __bundleIdentifier];
     }
@@ -47,20 +49,6 @@ void MacNotificationHandler::showNotification(const QString &title, const QStrin
         [textMac release];
         [userNotification release];
     }
-}
-
-// sendAppleScript just take a QString and executes it as apple script
-void MacNotificationHandler::sendAppleScript(const QString &script)
-{
-    QByteArray utf8 = script.toUtf8();
-    char* cString = (char *)utf8.constData();
-    NSString *scriptApple = [[NSString alloc] initWithUTF8String:cString];
-
-    NSAppleScript *as = [[NSAppleScript alloc] initWithSource:scriptApple];
-    NSDictionary *err = nil;
-    [as executeAndReturnError:&err];
-    [as release];
-    [scriptApple release];
 }
 
 bool MacNotificationHandler::hasUserNotificationCenterSupport(void)

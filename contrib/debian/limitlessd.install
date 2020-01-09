@@ -1,2 +1,3 @@
 usr/local/bin/limitlessd usr/bin
 usr/local/bin/limitless-cli usr/bin
+debian/examples/limitless.conf etc/limitless

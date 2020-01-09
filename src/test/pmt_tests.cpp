@@ -1,5 +1,9 @@
-// Copyright (c) 2012-2013 The Bitcoin Core developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2012-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "merkleblock.h"
@@ -7,12 +11,13 @@
 #include "streams.h"
 #include "uint256.h"
 #include "version.h"
+#include "random.h"
+#include "test/test_limitless.h"
 
 #include <vector>
 
 #include <boost/test/unit_test.hpp>
 
-using namespace std;
 
 class CPartialMerkleTreeTester : public CPartialMerkleTree
 {
@@ -26,7 +31,7 @@ public:
     }
 };
 
-BOOST_AUTO_TEST_SUITE(pmt_tests)
+BOOST_FIXTURE_TEST_SUITE(pmt_tests, BasicTestingSetup)
 
 BOOST_AUTO_TEST_CASE(pmt_test1)
 {

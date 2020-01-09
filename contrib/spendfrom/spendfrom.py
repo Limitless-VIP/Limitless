@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 #
-# Use the raw transactions API to spend AMSs received on particular addresses,
+# Use the raw transactions API to spend VIPs received on particular addresses,
 # and send any change back to that same address.
 #
 # Example usage:
 #  spendfrom.py  # Lists available funds
 #  spendfrom.py --from=ADDRESS --to=ADDRESS --amount=11.00
 #
-# Assumes it will talk to a limitlessd or limitless-Qt running
+# Assumes it will talk to a limitlessd or limitless-qt running
 # on localhost.
 #
 # Depends on jsonrpc
@@ -38,7 +38,7 @@ def determine_db_dir():
         return os.path.expanduser("~/Library/Application Support/Limitless/")
     elif platform.system() == "Windows":
         return os.path.join(os.environ['APPDATA'], "Limitless")
-    return os.path.expanduser("~/.limitless")
+    return os.path.expanduser("~/.Limitless")
 
 def read_bitcoin_config(dbdir):
     """Read the limitless.conf file from dbdir, returns dictionary of settings"""
@@ -67,7 +67,7 @@ def connect_JSON(config):
     testnet = config.get('testnet', '0')
     testnet = (int(testnet) > 0)  # 0/1 in config file, convert to True/False
     if not 'rpcport' in config:
-        config['rpcport'] = 8005 if testnet else 51020
+        config['rpcport'] = 8005 if testnet else 8008
     connect = "http://%s:%s@127.0.0.1:%s"%(config['rpcuser'], config['rpcpassword'], config['rpcport'])
     try:
         result = ServiceProxy(connect)
@@ -221,9 +221,9 @@ def main():
 
     parser = optparse.OptionParser(usage="%prog [options]")
     parser.add_option("--from", dest="fromaddresses", default=None,
-                      help="addresses to get AMSs from")
+                      help="addresses to get VIPs from")
     parser.add_option("--to", dest="to", default=None,
-                      help="address to get send AMSs to")
+                      help="address to get send VIPs to")
     parser.add_option("--amount", dest="amount", default=None,
                       help="amount to send")
     parser.add_option("--fee", dest="fee", default="0.0",

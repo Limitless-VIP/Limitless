@@ -62,12 +62,12 @@
         <translation>Receiving addresses</translation>
     </message>
     <message>
-        <source>These are your Limitless addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your Limitless addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your VIP addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your VIP addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
-        <source>These are your Limitless addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your Limitless addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <source>These are your VIP addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>These are your VIP addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Encrypt</translation>
     </message>
     <message>
-        <source>Enter a Limitless Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Enter a Limitless Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
+        <source>Enter a VIP Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Enter a VIP Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Address:</translation>
     </message>
     <message>
-        <source>The Limitless address to sign the message with</source>
-        <translation>The Limitless address to sign the message with</translation>
+        <source>The VIP address to sign the message with</source>
+        <translation>The VIP address to sign the message with</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Limitless address</source>
-        <translation>Sign the message to prove you own this Limitless address</translation>
+        <source>Sign the message to prove you own this VIP address</source>
+        <translation>Sign the message to prove you own this VIP address</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</translation>
     </message>
     <message>
-        <source>The Limitless address the message was signed with</source>
-        <translation>The Limitless address the message was signed with</translation>
+        <source>The VIP address the message was signed with</source>
+        <translation>The VIP address the message was signed with</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Limitless address</source>
-        <translation>Verify the message to ensure it was signed with the specified Limitless address</translation>
+        <source>Verify the message to ensure it was signed with the specified VIP address</source>
+        <translation>Verify the message to ensure it was signed with the specified VIP address</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -606,8 +606,8 @@
         <translation>Limitless Core</translation>
     </message>
     <message>
-        <source>Send coins to a Limitless address</source>
-        <translation>Send coins to a Limitless address</translation>
+        <source>Send coins to a VIP address</source>
+        <translation>Send coins to a VIP address</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and limitless: URIs)</source>
@@ -630,16 +630,16 @@
         <translation>Show information about Limitless Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Limitless</source>
-        <translation>Modify configuration options for Limitless</translation>
+        <source>Modify configuration options for VIP</source>
+        <translation>Modify configuration options for VIP</translation>
     </message>
     <message>
-        <source>Sign messages with your Limitless addresses to prove you own them</source>
-        <translation>Sign messages with your Limitless addresses to prove you own them</translation>
+        <source>Sign messages with your VIP addresses to prove you own them</source>
+        <translation>Sign messages with your VIP addresses to prove you own them</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Limitless addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Limitless addresses</translation>
+        <source>Verify messages to ensure they were signed with specified VIP addresses</source>
+        <translation>Verify messages to ensure they were signed with specified VIP addresses</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -670,8 +670,8 @@
         <translation>Open Masternode configuration file</translation>
     </message>
     <message>
-        <source>Open a Limitless: URI or payment request</source>
-        <translation>Open a Limitless: URI or payment request</translation>
+        <source>Open a VIP: URI or payment request</source>
+        <translation>Open a VIP: URI or payment request</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -1138,8 +1138,8 @@ Address: %4
         <translation>Edit sending address</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Limitless address.</source>
-        <translation>The entered address "%1" is not a valid Limitless address.</translation>
+        <source>The entered address "%1" is not a valid VIP address.</source>
+        <translation>The entered address "%1" is not a valid VIP address.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1208,12 +1208,16 @@ Address: %4
         <translation>command-line options</translation>
     </message>
     <message>
-        <source>UI options</source>
-        <translation>UI options</translation>
+        <source>UI Options:</source>
+        <translation>UI Options:</translation>
     </message>
     <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Choose data directory on startup (default: 0)</translation>
+        <source>Choose data directory on startup (default: %u)</source>
+        <translation>Choose data directory on startup (default: %u)</translation>
+    </message>
+    <message>
+        <source>Show splash screen on startup (default: %u)</source>
+        <translation>Show splash screen on startup (default: %u)</translation>
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
@@ -1226,10 +1230,6 @@ Address: %4
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Set SSL root certificates for payment request (default: -system-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Show splash screen on startup (default: 1)</translation>
     </message>
 </context>
 <context>
@@ -1247,8 +1247,8 @@ Address: %4
         <translation>As this is the first time the program is launched, you can choose where Limitless Core will store its data.</translation>
     </message>
     <message>
-        <source>Limitless Core will download and store a copy of the Limitless block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Limitless Core will download and store a copy of the Limitless block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>Limitless Core will download and store a copy of the VIP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Limitless Core will download and store a copy of the VIP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1346,22 +1346,6 @@ Address: %4
         <translation>0</translation>
     </message>
     <message>
-        <source>All Masternodes</source>
-        <translation>All Masternodes</translation>
-    </message>
-    <message>
-        <source>Filter List:</source>
-        <translation>Filter List:</translation>
-    </message>
-    <message>
-        <source>Filter masternode list</source>
-        <translation>Filter masternode list</translation>
-    </message>
-    <message>
-        <source>Node Count:</source>
-        <translation>Node Count:</translation>
-    </message>
-    <message>
         <source>Start alias</source>
         <translation>Start alias</translation>
     </message>
@@ -1417,12 +1401,12 @@ Address: %4
         <translation>Enter Address to Send to</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Limitless addresses after it matures.
-To Add: enter percentage to give and Limitless address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other VIP addresses after it matures.
+To Add: enter percentage to give and VIP address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Limitless addresses after it matures.
-To Add: enter percentage to give and Limitless address to add to the MultiSend vector.
+        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other VIP addresses after it matures.
+To Add: enter percentage to give and VIP address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</translation>
     </message>
@@ -1560,48 +1544,48 @@ Please check the address and try again.</translation>
         <translation>Please select a privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 VIP</source>
-        <translation>Use 2 separate masternodes to mix funds up to 10000 VIP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 15000 VIP</source>
+        <translation>Use 2 separate masternodes to mix funds up to 15000 VIP</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 VIP</source>
-        <translation>Use 8 separate masternodes to mix funds up to 10000 VIP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 15000 VIP</source>
+        <translation>Use 8 separate masternodes to mix funds up to 15000 VIP</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 separate masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 VIP to anonymize 10000 VIP</source>
-        <translation>This option is the quickest and will cost about ~0.025 VIP to anonymize 10000 VIP</translation>
+        <source>This option is the quickest and will cost about ~0.025 VIP to anonymize 15000 VIP</source>
+        <translation>This option is the quickest and will cost about ~0.025 VIP to anonymize 15000 VIP</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 VIP to anonymize 10000 VIP</source>
-        <translation>This option is moderately fast and will cost about 0.05 VIP to anonymize 10000 VIP</translation>
+        <source>This option is moderately fast and will cost about 0.05 VIP to anonymize 15000 VIP</source>
+        <translation>This option is moderately fast and will cost about 0.05 VIP to anonymize 15000 VIP</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
-        <source>0.1 VIP per 10000 VIP you anonymize.</source>
-        <translation>0.1 VIP per 10000 VIP you anonymize.</translation>
+        <source>0.1 VIP per 15000 VIP you anonymize.</source>
+        <translation>0.1 VIP per 15000 VIP you anonymize.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Obfuscation Configuration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Limitless's configuration screen.</source>
-        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Limitless's configuration screen.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening VIP's configuration screen.</source>
+        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening VIP's configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Limitless's configuration screen.</source>
-        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Limitless's configuration screen.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening VIP's configuration screen.</source>
+        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening VIP's configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Limitless's configuration screen.</source>
-        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Limitless's configuration screen.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening VIP's configuration screen.</source>
+        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening VIP's configuration screen.</translation>
     </message>
 </context>
 <context>
@@ -1662,8 +1646,8 @@ Please check the address and try again.</translation>
         <translation>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</translation>
     </message>
     <message>
-        <source>Automatically open the Limitless client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Limitless client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the VIP client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the VIP client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1682,12 +1666,12 @@ Please check the address and try again.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Limitless after logging in to the system.</source>
-        <translation>Automatically start Limitless after logging in to the system.</translation>
+        <source>Automatically start VIP after logging in to the system.</source>
+        <translation>Automatically start VIP after logging in to the system.</translation>
     </message>
     <message>
-        <source>&amp;Start Limitless on system login</source>
-        <translation>&amp;Start Limitless on system login</translation>
+        <source>&amp;Start VIP on system login</source>
+        <translation>&amp;Start VIP on system login</translation>
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
@@ -1702,8 +1686,8 @@ Please check the address and try again.</translation>
         <translation>This amount acts as a threshold to turn off Obfuscation once it's reached.</translation>
     </message>
     <message>
-        <source>Amount of Limitless to keep anonymized</source>
-        <translation>Amount of Limitless to keep anonymized</translation>
+        <source>Amount of VIP to keep anonymized</source>
+        <translation>Amount of VIP to keep anonymized</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1730,8 +1714,8 @@ Please check the address and try again.</translation>
         <translation>&amp;Network</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Limitless.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Limitless.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting VIP.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting VIP.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -2112,8 +2096,8 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>Cannot start limitless: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Limitless address or malformed URI parameters.</source>
-        <translation>URI cannot be parsed! This can be caused by an invalid Limitless address or malformed URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid VIP address or malformed URI parameters.</source>
+        <translation>URI cannot be parsed! This can be caused by an invalid VIP address or malformed URI parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2198,8 +2182,8 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>Amount</translation>
     </message>
     <message>
-        <source>Enter a Limitless address (e.g. %1)</source>
-        <translation>Enter a Limitless address (e.g. %1)</translation>
+        <source>Enter a VIP address (e.g. %1)</source>
+        <translation>Enter a VIP address (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2332,8 +2316,8 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Limitless debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Limitless debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the VIP debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the VIP debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2432,64 +2416,64 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>&amp;Wallet Repair</translation>
     </message>
     <message>
+        <source>Wallet In Use:</source>
+        <translation>Wallet In Use:</translation>
+    </message>
+    <message>
         <source>Salvage wallet</source>
         <translation>Salvage wallet</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
+        <translation>Attempt to recover private keys from a corrupt wallet.dat.</translation>
     </message>
     <message>
         <source>Rescan blockchain files</source>
         <translation>Rescan blockchain files</translation>
     </message>
     <message>
+        <source>Rescan the block chain for missing wallet transactions.</source>
+        <translation>Rescan the block chain for missing wallet transactions.</translation>
+    </message>
+    <message>
         <source>Recover transactions 1</source>
         <translation>Recover transactions 1</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
+        <translation>Recover transactions from blockchain (keep meta-data, e.g. account owner).</translation>
     </message>
     <message>
         <source>Recover transactions 2</source>
         <translation>Recover transactions 2</translation>
     </message>
     <message>
+        <source>Recover transactions from blockchain (drop meta-data).</source>
+        <translation>Recover transactions from blockchain (drop meta-data).</translation>
+    </message>
+    <message>
         <source>Upgrade wallet format</source>
         <translation>Upgrade wallet format</translation>
+    </message>
+    <message>
+        <source>Rebuild block chain index from current blk000??.dat files.</source>
+        <translation>Rebuild block chain index from current blk000??.dat files.</translation>
     </message>
     <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
         <translation>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</translation>
     </message>
     <message>
-        <source>-salvagewallet: Attempt to recover private keys from a corrupt wallet.dat.</source>
-        <translation>-salvagewallet: Attempt to recover private keys from a corrupt wallet.dat.</translation>
-    </message>
-    <message>
-        <source>-rescan: Rescan the block chain for missing wallet transactions.</source>
-        <translation>-rescan: Rescan the block chain for missing wallet transactions.</translation>
-    </message>
-    <message>
-        <source>-zapwallettxes=1: Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
-        <translation>-zapwallettxes=1: Recover transactions from blockchain (keep meta-data, e.g. account owner).</translation>
-    </message>
-    <message>
-        <source>-zapwallettxes=2: Recover transactions from blockchain (drop meta-data).</source>
-        <translation>-zapwallettxes=2: Recover transactions from blockchain (drop meta-data).</translation>
-    </message>
-    <message>
-        <source>-upgradewallet: Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</source>
-        <translation>-upgradewallet: Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</translation>
-    </message>
-    <message>
         <source>Wallet repair options.</source>
         <translation>Wallet repair options.</translation>
     </message>
     <message>
+        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</source>
+        <translation>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</translation>
+    </message>
+    <message>
         <source>Rebuild index</source>
         <translation>Rebuild index</translation>
-    </message>
-    <message>
-        <source>-reindex: Rebuild block chain index from current blk000??.dat files.</source>
-        <translation>-reindex: Rebuild block chain index from current blk000??.dat files.</translation>
-    </message>
-    <message>
-        <source>Wallet Path</source>
-        <translation>Wallet Path</translation>
     </message>
     <message>
         <source>In:</source>
@@ -2500,12 +2484,8 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the Limitless RPC console.</source>
-        <translation>Welcome to the Limitless RPC console.</translation>
-    </message>
-    <message>
-        <source>Wallet in use: </source>
-        <translation>Wallet in use: </translation>
+        <source>Welcome to the VIP RPC console.</source>
+        <translation>Welcome to the VIP RPC console.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2868,8 +2848,8 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>If the custom fee is set to 1000 uVIPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uVIPs in fee,&lt;br /&gt;while "total at least" pays 1000 uVIPs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Limitless transactions than the network can process.</source>
-        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Limitless transactions than the network can process.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for VIP transactions than the network can process.</source>
+        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for VIP transactions than the network can process.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2972,8 +2952,8 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>anonymous funds</translation>
     </message>
     <message>
-        <source>Warning: Invalid Limitless address</source>
-        <translation>Warning: Invalid Limitless address</translation>
+        <source>Warning: Invalid VIP address</source>
+        <translation>Warning: Invalid VIP address</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3079,8 +3059,8 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>Pay &amp;To:</translation>
     </message>
     <message>
-        <source>The Limitless address to send the payment to</source>
-        <translation>The Limitless address to send the payment to</translation>
+        <source>The VIP address to send the payment to</source>
+        <translation>The VIP address to send the payment to</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3119,8 +3099,8 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>Message:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Limitless: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Limitless network.</source>
-        <translation>A message that was attached to the Limitless: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Limitless network.</translation>
+        <source>A message that was attached to the VIP: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Limitless network.</source>
+        <translation>A message that was attached to the VIP: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Limitless network.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3169,8 +3149,8 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
-        <source>The Limitless address to sign the message with</source>
-        <translation>The Limitless address to sign the message with</translation>
+        <source>The VIP address to sign the message with</source>
+        <translation>The VIP address to sign the message with</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3201,16 +3181,16 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Limitless address</source>
-        <translation>Sign the message to prove you own this Limitless address</translation>
+        <source>Sign the message to prove you own this VIP address</source>
+        <translation>Sign the message to prove you own this VIP address</translation>
     </message>
     <message>
-        <source>The Limitless address the message was signed with</source>
-        <translation>The Limitless address the message was signed with</translation>
+        <source>The VIP address the message was signed with</source>
+        <translation>The VIP address the message was signed with</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Limitless address</source>
-        <translation>Verify the message to ensure it was signed with the specified Limitless address</translation>
+        <source>Verify the message to ensure it was signed with the specified VIP address</source>
+        <translation>Verify the message to ensure it was signed with the specified VIP address</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3310,6 +3290,10 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
     <message>
         <source>The Dash Core developers</source>
         <translation>The Dash Core developers</translation>
+    </message>
+    <message>
+        <source>The PIVX Core developers</source>
+        <translation>The PIVX Core developers</translation>
     </message>
     <message>
         <source>The Limitless Core developers</source>
@@ -3950,12 +3934,16 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</translation>
     </message>
     <message>
-        <source>Disable all Limitless specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Disable all Limitless specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</translation>
+        <source>Disable all VIP specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Disable all VIP specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
+    </message>
+    <message>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>Enable spork administration functionality with the appropriate private key.</translation>
     </message>
     <message>
         <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
@@ -4022,6 +4010,10 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</translation>
     </message>
     <message>
+        <source>Keep the specified amount available for spending at all times (default: 0)</source>
+        <translation>Keep the specified amount available for spending at all times (default: 0)</translation>
+    </message>
+    <message>
         <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
         <translation>Log transaction priority and fee per kB when mining blocks (default: %u)</translation>
     </message>
@@ -4082,12 +4074,12 @@ https://www.transifex.com/limitless-project/limitless-project-translations</tran
         <translation>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</translation>
     </message>
     <message>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</translation>
+        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
+        <translation>Support filtering of blocks and transaction with bloom filters (default: %u)</translation>
     </message>
     <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</translation>
+        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
@@ -4103,7 +4095,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Limitless Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "VIP Alert" admin@foo.com
 </source>
         <translation>To use limitlessd, or the -server option to limitless-qt, you must set an rpcpassword in the configuration file:
 %s
@@ -4114,7 +4106,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Limitless Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "VIP Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -4126,12 +4118,12 @@ for example: alertnotify=echo %%s | mail -s "Limitless Alert" admin@foo.com
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 VIP.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 VIP.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 15000 VIP.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 15000 VIP.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 VIP.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 VIP.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 15000 VIP.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 15000 VIP.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4178,8 +4170,8 @@ for example: alertnotify=echo %%s | mail -s "Limitless Alert" admin@foo.com
         <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
     </message>
     <message>
-        <source>(50020 could be used only on mainnet)</source>
-        <translation>(50020 could be used only on mainnet)</translation>
+        <source>(8007 could be used only on mainnet)</source>
+        <translation>(8007 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4190,14 +4182,8 @@ for example: alertnotify=echo %%s | mail -s "Limitless Alert" admin@foo.com
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 50020 for mainnet)</source>
-        <translation>(must be 50020 for mainnet)</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:
-</source>
-        <translation>&lt;category&gt; can be:
-</translation>
+        <source>(must be 8007 for mainnet)</source>
+        <translation>(must be 8007 for mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -4300,8 +4286,16 @@ for example: alertnotify=echo %%s | mail -s "Limitless Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Limitless Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Limitless Core Developers</translation>
+        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2018-%i The Galilel Core Developers</source>
+        <translation>Copyright (C) 2018-%i The Galilel Core Developers</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2019-%i The Limitless Core Developers</source>
+        <translation>Copyright (C) 2019-%i The Limitless Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4548,6 +4542,54 @@ for example: alertnotify=echo %%s | mail -s "Limitless Alert" admin@foo.com
         <translation>Invalid script detected.</translation>
     </message>
     <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
+        <translation>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; can be:</translation>
+    </message>
+    <message>
+        <source>Attempt to force blockchain corruption recovery</source>
+        <translation>Attempt to force blockchain corruption recovery</translation>
+    </message>
+    <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>Display the stake modifier calculations in the debug.log file.</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>Display verbose coin stake messages in the debug.log file.</translation>
+    </message>
+    <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>Enable publish hash block in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
+        <translation>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>Enable publish hash transaction in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>Enable publish raw block in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
+        <translation>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>Enable publish raw transaction in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable staking functionality (0-1, default: %u)</source>
+        <translation>Enable staking functionality (0-1, default: %u)</translation>
+    </message>
+    <message>
         <source>Keep N VIP anonymized (default: %u)</source>
         <translation>Keep N VIP anonymized (default: %u)</translation>
     </message>
@@ -4728,6 +4770,10 @@ for example: alertnotify=echo %%s | mail -s "Limitless Alert" admin@foo.com
         <translation>Prepend debug output with timestamp (default: %u)</translation>
     </message>
     <message>
+        <source>Print version and exit</source>
+        <translation>Print version and exit</translation>
+    </message>
+    <message>
         <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</translation>
     </message>
@@ -4882,6 +4928,10 @@ for example: alertnotify=echo %%s | mail -s "Limitless Alert" admin@foo.com
     <message>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
         <translation>Spend unconfirmed change when sending transactions (default: %u)</translation>
+    </message>
+    <message>
+        <source>Staking options:</source>
+        <translation>Staking options:</translation>
     </message>
     <message>
         <source>Stop running after importing blocks from disk (default: %u)</source>
@@ -5094,6 +5144,10 @@ for example: alertnotify=echo %%s | mail -s "Limitless Alert" admin@foo.com
     <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>Zapping all transactions from wallet...</translation>
+    </message>
+    <message>
+        <source>ZeroMQ notification options:</source>
+        <translation>ZeroMQ notification options:</translation>
     </message>
     <message>
         <source>on startup</source>

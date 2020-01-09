@@ -1,5 +1,9 @@
-// Copyright (c) 2012-2013 The Bitcoin Core developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2012-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Galilel developers
+
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "pubkey.h"
@@ -7,13 +11,12 @@
 #include "script/script.h"
 #include "script/standard.h"
 #include "uint256.h"
+#include "test_limitless.h"
 
 #include <vector>
 
-#include <boost/foreach.hpp>
 #include <boost/test/unit_test.hpp>
 
-using namespace std;
 
 // Helpers:
 static std::vector<unsigned char>
@@ -23,7 +26,7 @@ Serialize(const CScript& s)
     return sSerialized;
 }
 
-BOOST_AUTO_TEST_SUITE(sigopcount_tests)
+BOOST_FIXTURE_TEST_SUITE(sigopcount_tests, BasicTestingSetup)
 
 BOOST_AUTO_TEST_CASE(GetSigOpCount)
 {

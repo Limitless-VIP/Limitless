@@ -1,0 +1,8 @@
+/usr/bin/limitless-cli		--	gen_context(system_u:object_r:limitless_exec_t,s0)
+/usr/sbin/limitlessd		--	gen_context(system_u:object_r:limitless_exec_t,s0)
+/usr/lib(64)?/limitless/limitlessd		--	gen_context(system_u:object_r:limitless_exec_t,s0)
+
+/etc/limitless(/.*)?		gen_context(system_u:object_r:limitless_conf_t,s0)
+/var/lib/limitless(/.*)?		gen_context(system_u:object_r:limitless_var_lib_t,s0)
+
+(/var)?/run/limitlessd(/.*)?   gen_context(system_u:object_r:limitless_var_run_t,s0)
