@@ -19,8 +19,8 @@ features, masternodes, and a number of other scaling solutions.
 
 The future of Limitless VIP is also helping to make Breast Cancer a thing of 
 the past buy running a masternode dedicated to funding cancer charities.
-Limitless VIP will provide a hose of services for short term investment however 
-the min use case of Limitless VIP is to be the exclusive currency for Limitless Island, 
+Limitless VIP will provide a host of services to fund short term investment, however, 
+the main use case of Limitless VIP is to be the exclusive currency for Limitless Island, 
 a vision that the Team are working towards.
 The Limitless technology enables instant payments to anyone, Bitcoin led the way with
 this technology and was first released in November 2008, a paper was posted on the 
